@@ -849,11 +849,9 @@ section.FAQsBody .accordion .accordion-item .accordion-header button.accordion-b
 }
 
 section.FAQsBody .accordion .accordion-item .accordion-header button.accordion-button:not(.collapsed)::after, section.LegalBody .accordion .accordion-item .accordion-header button.accordion-button:not(.collapsed)::after, .NotificationBody .accordion .accordion-item .accordion-header button.accordion-button:not(.collapsed)::after {
-
-    background-image: url(../images/AccordionMinus.svg);
+    background-image: url(../images/AccordionMinus.svg) !important;
     background-position: center center;
     transform: unset;
-
 }
 
 section.FAQsBody .accordion .accordion-item, section.LegalBody .accordion .accordion-item, .NotificationBody .accordion .accordion-item {
@@ -1181,7 +1179,7 @@ section.PurshaseHistoryBody table .DownloadBtnTabel {
 .SmallSideNav {
     position: fixed;
     left: 0;
-    top: 130px;
+    top: 80px;
     z-index: 250;
     background-color: #f7f7f7 !important;
     border: 2px solid #e2e2e2 !important;
@@ -1357,7 +1355,7 @@ button.btn-primary:focus {
 
 }
 
-.accordion-button:not(.collapsed)::after, .SideNav .nav #accordionExample .accordion-item .accordion-button::after {
+ .SideNav .nav #accordionExample .accordion-item .accordion-button::after {
     display: none !important;
 }
 
@@ -1597,9 +1595,7 @@ body.UploadStory {
     background-color: #F6F6F6;
 }
 
-section.UploadStoryBody .UploadStoryForm {
-    width: 75%;
-}
+
 
 section.UploadStoryBody .UploadStoryForm .UploadBtn {
     width: 30%;
@@ -1668,7 +1664,6 @@ section.UploadStoryBody .UploadStoryForm .Description {
 }
 
 section.UploadStoryBody .UploadStoryForm .UploadSelectLabel {
-    width: 100%;
     text-align: left;
     color: #939597;
     font-size: 25px;
@@ -2728,6 +2723,14 @@ table.fc-border-separate {
     nav#navbar form.navForm svg {
         left: 2%;
     }
+   
+section.AboutBody .UploadImage {
+    background-color: #F7F7F7;
+    border-radius: 70px;
+    height: 350px;
+    width: 50%;
+    margin: auto;
+}
 }
 
 @media (max-width:767px) {
@@ -2799,13 +2802,18 @@ table.fc-border-separate {
     nav#navbar form.navForm svg {
         left: 4%;
     }
+    section.AboutBody .UploadImage {    
+        width: 75%;
+    }
 }
 
 @media (max-width: 575px) {
     section.program .card, section.specialOffer .card-group .card {
         width: 100%;
     }
-
+    section.AboutBody .UploadImage {    
+        width: 100%;
+    }
     .modal .modal-content {
         padding: 20px;
         border-radius: 50px;
