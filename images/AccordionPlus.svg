@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46.887" height="46.887" viewBox="0 0 46.887 46.887">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f990c2;
+        stroke: #f990c2;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <path id="plus_8_" data-name="plus (8)" class="cls-1" d="M42.643,20.2H24.688V2.244a2.244,2.244,0,0,0-4.489,0V20.2H2.244a2.244,2.244,0,0,0,0,4.489H20.2V42.643a2.244,2.244,0,1,0,4.489,0V24.688H42.643a2.244,2.244,0,1,0,0-4.489Zm0,0" transform="translate(1 45.888) rotate(-90)"/>
+</svg>

@@ -1,0 +1,2926 @@
+@font-face {
+    font-family: lato-regular;
+    src: url(../fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: CenturyGothic;
+    src: url(../fonts/century-gothic/CenturyGothic.ttf);
+}
+
+body {
+    direction: rtl;
+    font-family: CenturyGothic !important;
+}
+
+body.Login, body.Register, body.ForgotPassword, body.Cart, body.PurshaseHistory {
+    background-color: #EB8EBA
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.BGwhite {
+    background-color: white !important;
+}
+
+.BGPink {
+    background-color: #EB8EBA !important;
+}
+
+.BGFushia {
+    background-color: #DA3675 !important;
+}
+
+.RightTopCorner {
+    border-top-left-radius: 0 !important;
+
+}
+
+.RightBottomCorner {
+    border-bottom-left-radius: 0 !important;
+}
+
+.LeftTopCorner {
+    border-top-right-radius: 0 !important;
+}
+
+.LeftBottomCorner {
+    border-bottom-right-radius: 0 !important;
+}
+
+.title, .GreyTitle, .WhiteTitle {
+    font-size: 45px;
+    font-weight: bolder;
+    margin-bottom: 45px;
+}
+
+.title {
+    color: #EB8EBA;
+
+}
+
+.GreyTitle {
+    color: #939597;
+}
+
+.WhiteTitle {
+    color: white;
+}
+
+/*******************
+*****************
+Navbar
+*****************
+*******************/
+nav#navbar {
+    background-color: #EB8EBA;
+    height: 80px;
+    font-family: lato-regular !important;
+    z-index: 210;
+}
+
+nav#navbar .navbar-brand {
+    width: 40px;
+}
+
+nav#navbar .navbar-brand img {
+    width: 100%;
+}
+
+nav#navbar .dropdown a.dropdown-toggle {
+    width: 150px;
+    text-align: right;
+    border-radius: 20px;
+    background-color: #FF99CA;
+    color: white;
+    border: none;
+    box-shadow: none;
+    padding: 10px 20px;
+    display: flex;
+    direction: rtl;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+nav#navbar .dropdown a.dropdown-toggle svg {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+nav#navbar .dropdown .dropdown-toggle::after {
+    display: none;
+}
+
+nav#navbar form.navForm {
+    position: relative;
+}
+
+nav#navbar form.navForm svg {
+    position: absolute;
+    right: 6%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+
+}
+
+nav#navbar input.form-control {
+    width: 350px;
+    background-color: #FF99CA;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    box-shadow: none;
+    padding: 10px 20px;
+    padding-right: 60px;
+    font-size: 16px;
+    margin-right: 10px;
+
+}
+
+nav#navbar .SeachBar {
+    display: none;
+    border: 1px solid white;
+    box-shadow: white;
+    border-radius: 0 !important;
+}
+
+nav#navbar input::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+nav#navbar input:-ms-input-placeholder {
+    color: white;
+
+}
+
+nav#navbar input::-ms-input-placeholder {
+    color: white;
+
+}
+
+.rounded-pill {
+    border-radius: 50% !important;
+}
+
+ul.navbar-nav li.nav-item a.nav-link {
+    color: white;
+    font-size: 16px;
+}
+
+ul.navbar-nav li.nav-item:hover a.nav-link {
+    color: #939597;
+}
+
+ul.navbar-nav li.nav-item a.nav-link svg {
+    font-size: 20px;
+}
+
+ul.navbar-nav li.nav-item a.nav-link button.btn, .NotificationBody .GreyTitle button {
+    background-color: #FF99CA;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    box-shadow: none;
+    padding: 10px 20px;
+
+}
+
+ul.navbar-nav li.nav-item a.nav-link button.btn:hover, .NotificationBody .GreyTitle button:hover {
+    background-color: white;
+    color: #EB8EBA;
+}
+
+/*******************
+*****************
+End Navbar
+*****************
+*******************/
+
+
+
+/*******************
+*****************
+Header
+*****************
+*******************/
+header.header {
+    background-color: #EB8EBA;
+    position: relative;
+    height: 110vh;
+    border-top: 1px solid white;
+    overflow: hidden;
+}
+
+header.header .headerBg1 {
+    position: absolute;
+    bottom: -20%;
+    right: 0;
+    width: 40%;
+}
+
+header.header .headerBg2 {
+    position: absolute;
+    left: -25%;
+    width: 40%;
+
+}
+
+header.header .container-fluid {
+    height: 100%;
+    width: 100%;
+}
+
+header.header .headerVid {
+    width: 100%;
+    height: 100%;
+    border-radius: 154px;
+}
+
+header.header .headerVid .videoBox {
+    width: 100px;
+    height: 100px;
+    background-color: #EB8EBA;
+    border-radius: 50%;
+}
+
+header.header .headerVid .videoBox svg {
+    color: white;
+    font-size: 40px;
+}
+
+/*******************
+*****************
+End Header
+*****************
+*******************/
+
+
+/*******************
+*****************
+Program Section
+*****************
+*******************/
+section.program .card {
+    border: none;
+    border-radius: 110px;
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.151));
+    text-align: center;
+    padding: 20px 0;
+}
+
+section.program .card .card-title {
+    font-size: 30px;
+    color: #767676;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+section.program .card .card-text img {
+    width: 80px;
+    margin: 30px 0;
+}
+
+section.program .card .card-text {
+    color: #9C9DA1;
+    font-size: 20px;
+    margin-bottom: 30px;
+
+}
+
+section.program .card button {
+    background-color: #BCBFC2;
+    color: white;
+    border: none;
+    font-size: 20px;
+    width: 50%;
+    border-radius: 20px;
+}
+
+section.program .card button:hover {
+    background-color: #767676;
+}
+
+/*******************
+*****************
+End Program Section
+*****************
+*******************/
+
+
+
+
+/*******************
+*****************
+ Special Offer Section
+
+*****************
+*******************/
+
+section.specialOffer .card-group .card {
+    border: none;
+    border-radius: 110px;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #EA8DB9;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.13));
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+
+section.specialOffer .card-group .card .card-title {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+section.specialOffer .card-group .card.BGwhite .card-title {
+    color: #EB8EBA;
+}
+
+section.specialOffer .card-group .card img {
+    position: absolute;
+    bottom: -60%;
+    right: -60%;
+    width: 150%;
+    height: 150%;
+    filter: brightness(0) invert(1);
+}
+
+section.specialOffer .card-group .card.BGwhite img {
+    filter: none;
+}
+
+section.specialOffer .card-group .card button {
+    position: absolute;
+    background-color: #EA8DB9;
+    font-size: 20px;
+    width: 75%;
+    border-radius: 25px;
+    bottom: 10%;
+    right: 50%;
+    transform: translateX(50%);
+    font-weight: bold;
+    border: 3px solid #EBEBEB;
+    padding: 10px;
+}
+
+section.specialOffer .card-group .card p {
+    position: absolute;
+    bottom: 30%;
+    right: 50%;
+    transform: translateX(50%);
+    width: 80%;
+}
+
+section.specialOffer .card-group .card button:hover {
+    background-color: #ffffff;
+    color: #EB8EBA;
+}
+
+section.specialOffer .card-group .card.BGwhite button:hover {
+    background-color: #b87091;
+    color: white;
+}
+
+/*******************
+*****************
+End Special Offer Section
+*****************
+*******************/
+
+
+/*******************
+*****************
+Stay In Touch Section
+*****************
+*******************/
+section.StayInTouch .UploadImage, section.StayInTouch .StayInTouchForm, body.HomePageaAfterLogingIn section.ProgramDate .UploadImage, body.HomePageaAfterLogingIn section.ProgramDate .ProgramDateDiv {
+    background-color: #F883BB;
+    color: white;
+    text-align: center;
+    border-radius: 110px;
+    height: 500px;
+    position: relative;
+}
+
+section.StayInTouch .UploadImage, section.AboutBody .UploadImage, body.HomePageaAfterLogingIn section.ProgramDate .UploadImage {
+    font-size: 100px;
+}
+
+section.StayInTouch .StayInTouchForm {
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+
+section.StayInTouch .StayInTouchForm h3 {
+    font-weight: bolder;
+    margin: 80px 0 40px 0;
+}
+
+section.StayInTouch .StayInTouchForm form input, section.StayInTouch .StayInTouchForm form button {
+    width: 100%;
+    padding: 20px 50px;
+    font-size: 20px;
+    border-radius: 40px;
+    border: none;
+    box-shadow: none;
+
+}
+
+section.StayInTouch .StayInTouchForm form button {
+    padding: 15px 30px;
+    background-color: white;
+    color: #EB8EBA;
+    font-weight: bolder;
+    border: 3px solid white;
+
+}
+
+section.StayInTouch .StayInTouchForm form button:hover {
+    border: 3px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+section.StayInTouch .StayInTouchForm img {
+    filter: brightness(0) invert(1);
+    position: absolute;
+    bottom: -40%;
+    right: -40%;
+    width: 100%;
+    height: 100%;
+}
+
+/*******************
+*****************
+End Stay In Touch Section
+*****************
+*******************/
+
+
+/*******************
+*****************
+Footer
+*****************
+*******************/
+footer.footer {
+    background-color: #EB8BB9;
+
+}
+
+footer.footer img.logoFooter {
+    width: 50%;
+}
+
+footer.footer h4 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+footer.footer a, footer.footer p {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    margin-bottom: 0px;
+    line-height: 35px;
+}
+
+footer.footer ul.list-group li.list-group-item {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+
+}
+
+footer.footer ul.list-group li.list-group-item a {
+    font-size: 13px;
+}
+
+footer.footer ul.list-group li.list-group-item a img {
+    width: 40px;
+}
+
+.list-group {
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/*******************
+*****************
+ENd Footer
+*****************
+*******************/
+
+/***********************************************************************************************************************
+***********************************************************************************************************************
+*******************************************       Login Page    **************************************************************
+***********************************************************************************************************************
+***********************************************************************************************************************/
+
+/*******************
+*****************
+Login Body
+*****************
+*******************/
+
+Section.LoginBody, Section.CartBody {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    position: relative;
+    overflow: hidden;
+}
+
+Section.LoginBody img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: -35%;
+    top: 0;
+    z-index: 1;
+}
+
+Section.LoginBody img.logo {
+    position: unset;
+    width: 70px;
+    z-index: 2;
+}
+
+Section.LoginBody .LoginForm, section.CartBody .CartWhite {
+    position: relative;
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 110px;
+    width: 50%;
+    z-index: 2;
+    padding: 70px 100px;
+    text-align: right;
+    color: #F07BB2;
+    filter: drop-shadow(15px 15px 30px rgba(0, 0, 0, 0.158));
+    margin-bottom: 50px;
+}
+
+Section.LoginBody .LoginForm button a {
+    color: white;
+}
+
+Section.LoginBody .LoginForm button:hover a {
+    color: #EB8EBA;
+}
+
+Section.LoginBody .LoginForm a {
+    color: #F07BB2;
+
+}
+
+Section.LoginBody .LoginForm input, Section.LoginBody .LoginForm select {
+    background-color: #F3F3F3;
+    font-size: 20px;
+    color: #6B6B6B;
+    padding: 15px 80px 15px 0px;
+    border-radius: 50px;
+    border: 1px solid #FFFFFF;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.123));
+    box-shadow: none;
+    text-align: right;
+}
+
+Section.LoginBody .LoginForm .position-relative svg, Section.LoginBody .LoginForm .position-relative img {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(50%, -50%);
+    color: #EB8EBA;
+    z-index: 3;
+    width: 20px;
+}
+
+Section.LoginBody .LoginForm .position-relative svg.fa-eye {
+    position: absolute;
+    top: 50%;
+    right: unset;
+    left: 8%;
+    transform: translate(50%, -50%);
+
+}
+
+Section.LoginBody .LoginForm button, section.CartBody .CartWhite button {
+    width: 85%;
+    background-color: #EB8EBA;
+    font-size: 20px;
+    color: white;
+    padding: 15px 10px;
+    border-radius: 50px;
+    border: 1px solid #FFFFFF;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.123));
+    box-shadow: none;
+}
+
+Section.LoginBody .LoginForm button:hover, section.CartBody .CartWhite button:hover {
+    background-color: #FFFFFF;
+    color: #EB8EBA !important;
+    border: 1px solid #EB8EBA
+}
+
+Section.LoginBody .LoginForm button.position-relative:hover svg {
+    color: #EB8EBA;
+}
+
+Section.LoginBody .LoginForm button.position-relative svg {
+    right: unset;
+    left: 8%;
+    color: white;
+
+}
+
+#LoginOrRegister {
+    color: #858585 !important;
+
+}
+
+body.ForgotPassword input {
+    font-size: 16px !important;
+}
+
+/*******************
+*****************
+End Login Body
+*****************
+*******************/
+
+
+
+/***********************************************************************************************************************
+***********************************************************************************************************************
+*******************************************       Cart Page  + CartFull Page   **************************************************************
+***********************************************************************************************************************
+***********************************************************************************************************************/
+section.CartBody .CartWhite svg {
+    font-size: 100px;
+}
+
+section.CartBody .CartWhite {
+    padding: 80px 50px 100px 50px;
+}
+
+body.CartFull .CartFullBody .CartItems .card {
+    border-radius: 90px;
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.13));
+    border: none;
+}
+
+body.CartFull .CartFullBody .CartItems .card img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 90px;
+
+}
+
+body.CartFull .CartFullBody .CartItems .card .card-title, body.CartFull .CartFullBody .CartItems .card h6.card-text {
+    font-size: 20px;
+    color: #939597;
+    font-weight: bolder;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+body.CartFull .CartFullBody .CartItems .card .card-title span {
+    color: #FFC107;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+body.CartFull .CartFullBody .CartItems .card p.card-text {
+    font-size: 14px;
+    color: #939597;
+    margin-bottom: 15px;
+    text-align: right;
+
+}
+
+body.CartFull .CartFullBody .CartItems .card h6.card-text span {
+    color: #1CF395;
+}
+
+body.CartFull .CartFullBody .CartItems .card a {
+    background-color: #EB8BB9;
+    border: 2px solid white;
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.13));
+    color: white;
+    font-weight: bold;
+    width: 80%;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 7px;
+}
+
+body.CartFull .OrderSummary {
+    background-color: #F7F7F7;
+    height: 100%;
+    border-radius: 28px;
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.13));
+    position: relative;
+    min-height: 500px;
+
+}
+
+body.CartFull .OrderSummary h3 {
+    color: #939597;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+body.CartFull .OrderSummary p.ItemQuantity {
+    font-size: 25px;
+    font-weight: 500;
+    color: #939597;
+    line-height: 50px;
+    border-bottom: 2px solid #70707069;
+    padding-bottom: 30px;
+}
+
+body.CartFull .OrderSummary .OrderTotalAndCheckOut {
+    position: absolute;
+    bottom: 10%;
+    font-size: 25px;
+    font-weight: 500;
+    color: #939597;
+    line-height: 50px;
+    width: 78%;
+
+}
+
+body.CartFull .OrderSummary .OrderTotalAndCheckOut button {
+    border-radius: 18px;
+    background-color: #EB8BB9;
+    color: white;
+    font-size: 25px;
+    padding: 10px 20px;
+    width: 100%;
+    border: 2px solid white;
+}
+
+body.CartFull .OrderSummary .OrderTotalAndCheckOut button:hover {
+    background-color: white;
+    color: #EB8BB9;
+    border: 2px solid #EB8BB9;
+}
+
+/***********************************************************************************************************************
+***********************************************************************************************************************
+*******************************************       About Page    **************************************************************
+***********************************************************************************************************************
+***********************************************************************************************************************/
+
+section.AboutBody {
+    padding: 80px 20px;
+}
+
+section.AboutBody .UploadImage {
+    background-color: #F7F7F7;
+    color: #F990C2;
+    text-align: center;
+    border-radius: 125px;
+    height: 100%;
+    width: 100%;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.13));
+
+}
+
+section.AboutBody .AboutText {
+    padding: 50px 20px;
+
+}
+
+section.AboutBody .AboutText h4 {
+    font-size: 35px;
+    color: #939597;
+    font-family: lato-regular;
+    margin-bottom: 20px;
+}
+
+section.AboutBody .AboutText p {
+    line-height: 40px;
+    font-size: 20px;
+    color: #2D2D2D;
+    font-weight: 500;
+    font-family: lato-regular;
+}
+
+
+/***********************************************************************************************************************
+***********************************************************************************************************************
+*******************************************       FAQs Page & Notification Page    **************************************************************
+***********************************************************************************************************************
+***********************************************************************************************************************/
+section.FAQsBody .GreyTitle, section.LegalBody .GreyTitle, .NotificationBody .GreyTitle {
+    font-family: lato-regular;
+}
+
+section.FAQsBody .accordion .accordion-item, section.LegalBody .accordion .accordion-item, .NotificationBody .accordion .accordion-item {
+    border: none;
+}
+
+section.FAQsBody .accordion .accordion-item .accordion-header button, section.LegalBody .accordion .accordion-item .accordion-header button, .NotificationBody .accordion .accordion-item .accordion-header button {
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 32px;
+    font-size: 20px;
+    line-height: 21px;
+    color: #6B6B6B;
+    font-weight: bolder;
+    padding: 25px 50px;
+    box-shadow: none;
+    transition: 0.5s ease all;
+}
+
+section.FAQsBody .accordion .accordion-item .accordion-header button.accordion-button::after, section.LegalBody .accordion .accordion-item .accordion-header button.accordion-button::after, .NotificationBody .accordion .accordion-item .accordion-header button.accordion-button::after {
+    background-image: url(../images/AccordionPlus.svg);
+    background-position: center center;
+}
+
+section.FAQsBody .accordion .accordion-item .accordion-header button.accordion-button:not(.collapsed)::after, section.LegalBody .accordion .accordion-item .accordion-header button.accordion-button:not(.collapsed)::after, .NotificationBody .accordion .accordion-item .accordion-header button.accordion-button:not(.collapsed)::after {
+
+    background-image: url(../images/AccordionMinus.svg);
+    background-position: center center;
+    transform: unset;
+
+}
+
+section.FAQsBody .accordion .accordion-item, section.LegalBody .accordion .accordion-item, .NotificationBody .accordion .accordion-item {
+    background-color: #E2E2E2;
+    border-radius: 32px;
+}
+
+section.FAQsBody .accordion .accordion-item .accordion-body, section.LegalBody .accordion .accordion-item .accordion-body, .NotificationBody .accordion .accordion-item .accordion-body {
+
+    padding: 20px 50px 40px 50px;
+    color: #6B6B6B;
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 500;
+}
+
+
+
+/***********************************************************************************************************************
+***********************************************************************************************************************
+*******************************************       Course Details Page    **************************************************************
+***********************************************************************************************************************
+***********************************************************************************************************************/
+.CourseDetails header.header video {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    object-fit: cover;
+
+}
+
+.CourseDetails section.CoursesDivs {
+    border-top: 3px solid white;
+}
+
+.CourseDetails section.CoursesDivs .card {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+}
+
+.CourseDetails section.CoursesDivs .BGwhite .card {
+    background-color: transparent;
+    border: none;
+    color: #767676;
+}
+
+.CourseDetails section.CoursesDivs .card .card-title {
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.CourseDetails section.CoursesDivs .card .card-body .card-text {
+    font-size: 17px;
+    line-height: 28px;
+}
+
+.CourseDetails section.CoursesDivs .RefundDays .card .card-body p.card-text {
+    font-size: 25px;
+    padding: 50px 0px 50px 50px;
+    line-height: 45px;
+}
+
+.CourseDetails section.Subscibe button.SubscribBTn {
+    width: 40%;
+    padding: 20px;
+    position: relative;
+    background-color: #539153;
+    border: 3px solid #539153;
+    overflow: hidden;
+    font-weight: bolder;
+}
+
+.CourseDetails section.Subscibe button.SubscribBTn:hover,
+.fixedBtn .SubscribBTn:hover {
+    color: #539153 !important;
+    background-color: white !important;
+    border: 3px solid #539153;
+
+}
+
+.CourseDetails section.Subscibe button.SubscribBTn img {
+    height: 250%;
+    position: absolute;
+    right: -20%;
+    top: -50%;
+    filter: brightness(0) invert(1);
+}
+
+.fixedBtn .SubscribBTn {
+    position: fixed;
+    bottom: 5%;
+    right: 50%;
+    width: 40%;
+    transform: translateX(50%);
+    padding: 15px 50px;
+    background-color: #539153;
+    border: 3px solid #539153;
+    overflow: hidden;
+    font-weight: bolder;
+    z-index: 50;
+}
+
+.fixedBtn .overlay {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.fixedBtn .overlay img {
+    height: 500%;
+    position: absolute;
+    right: 0%;
+    top: -100%;
+    filter: brightness(0) invert(1);
+}
+
+
+.CourseDetails section.ProgramAgenda {
+    background-color: #d3d3d3;
+}
+
+.CourseDetails section.ProgramAgenda .BGwhite {
+    border-radius: 40px;
+    color: #767676;
+    font-weight: 500;
+}
+
+.CourseDetails section.ProgramAgenda .nav-tabs .nav-link {
+    background-color: white;
+    width: 100%;
+    border: 1px solid #F990C2;
+    font-weight: bold;
+    color: #767676;
+    border-radius: 0;
+}
+
+.CourseDetails section.ProgramAgenda .tab-content {
+    border-top: none;
+    border: 1px solid #F990C2;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    background-color: #F990C2 !important;
+    color: white !important;
+}
+
+.CourseDetails section.ProgramAgenda .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-right: 0;
+    margin-bottom: 0;
+    list-style: none;
+    align-content: space-between;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.CourseDetails section.ProgramAgenda .PrgoramAgendaCards .card {
+    background-color: transparent;
+    border: 0;
+    text-align: center;
+    width: 90%;
+    border: 1px solid #F990C2;
+    padding: 2px;
+}
+
+.CourseDetails section.ProgramAgenda .PrgoramAgendaCards .card .card-text {
+    color: #F990C2;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+/***********************************************************************************************************************
+***********************************************************************************************************************
+*******************************************  Profile  **************************************************************
+***********************************************************************************************************************
+***********************************************************************************************************************/
+
+section.Profile .ProfileInfo .circle {
+    width: 200px !important;
+    height: 200px !important;
+    border-radius: 50%;
+}
+
+section.Profile .ProfileInfo .modal.show .modal-dialog {
+    height: 50%;
+    width: 100%;
+}
+
+section.Profile .ProfileInfo .modal .modal-content {
+    border-radius: 30px;
+    height: 75%;
+}
+
+section.Profile .ProfileInfo .modal .modal-body .UploadImage {
+    border: 3px dashed black;
+}
+
+section.Profile .ProfileForm form input, section.Profile .ProfileForm form select, section.Profile .ProfileForm form textarea, .HomePageaAfterLogingIn .SideNav .tab-content form textarea {
+    background-color: #F1F1F1;
+    color: black;
+    border-radius: 15px;
+    padding: 15px;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.219));
+    box-shadow: none !important;
+    text-align: right;
+}
+
+section.Profile .ProfileForm form textarea, .HomePageaAfterLogingIn .SideNav .tab-content form textarea {
+    height: 200px;
+}
+
+section.Profile .ProfileForm form label, .HomePageaAfterLogingIn .SideNav .tab-content form label {
+    padding-right: 10px;
+    font-family: lato-regular;
+}
+
+section.Profile .ProfileForm span a.LinkBtn {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    background-color: #F990C2;
+    border-radius: 20px;
+    padding: 10px 30px;
+    border: 1px solid #F990C2;
+}
+
+section.Profile .ProfileForm .AnotherMethod {
+    width: unset;
+    font-size: 17px;
+    color: #F990C2;
+    background-color: transparent;
+    border: none !important;
+    padding: 0px 10px;
+    margin: 13px 0px;
+    height: 100%;
+    font-weight: 600;
+}
+
+section.Profile .ProfileForm .QuizText p, section.Profile .ProfileForm .form-check p {
+    font-size: 25px;
+    font-weight: 400;
+    color: #939597;
+    line-height: 35px;
+}
+
+section.Profile .ProfileForm .form-check p {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: bolder;
+
+}
+
+/***********************************************************************************************************************
+***********************************************************************************************************************
+*******************************************       Purhsase History Page   **************************************************************
+***********************************************************************************************************************
+***********************************************************************************************************************/
+section.PurshaseHistoryBody, section.PurshaseHistoryBody table {
+    color: white !important;
+}
+
+section.PurshaseHistoryBody .card {
+    background-color: transparent;
+    border: none;
+}
+
+section.PurshaseHistoryBody .card .card-text {
+    font-size: 15px;
+}
+
+section.PurshaseHistoryBody .TablePart {
+    border: 2px solid white;
+}
+
+section.PurshaseHistoryBody table thead {
+    background-color: #F990C2;
+}
+
+section.PurshaseHistoryBody table thead tr th {
+    padding: 10px 30px;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+section.PurshaseHistoryBody thead, section.PurshaseHistoryBody tbody, section.PurshaseHistoryBody tfoot, section.PurshaseHistoryBody tr, section.PurshaseHistoryBody td, section.PurshaseHistoryBody th {
+    border-style: unset;
+    vertical-align: middle;
+}
+
+section.PurshaseHistoryBody table tr {
+    font-weight: 500;
+    line-height: 50px;
+}
+
+section.PurshaseHistoryBody table tr td {
+    text-align: center;
+    font-weight: bold;
+}
+
+section.PurshaseHistoryBody table .DownloadBtnTabel {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+/***********************************************************************************************************************
+***********************************************************************************************************************
+*******************************************       After Login Page   **************************************************************
+***********************************************************************************************************************
+***********************************************************************************************************************/
+
+
+/***************************
+***************Home Page****
+****************************/
+/********************
+******modal ****
+********************/
+.SmallSideNav {
+    position: fixed;
+    right: 0;
+    top: 130px;
+    z-index: 250;
+    background-color: #f7f7f7 !important;
+    border: 2px solid #e2e2e2 !important;
+    box-shadow: none !important;
+    padding: 5px 10px !important;
+    font-weight: 13px;
+    color: #a6a7aa !important;
+}
+
+.offcanvas {
+    z-index: 200 !important;
+}
+
+.offcanvas-start {
+    top: unset !important;
+    bottom: 0 !important;
+    background-color: rgb(255, 255, 255) !important;
+    border-left: none !important;
+    height: 100vh !important;
+}
+
+.modal {
+    z-index: 20000;
+}
+
+.modal .modal-header {
+    border: 0;
+}
+
+.modal .modal-header .btn-close {
+    color: #EB8BB9;
+    background-image: unset;
+    font-size: 20px;
+    opacity: 1;
+    background-color: transparent;
+    border: none !important;
+    box-shadow: none;
+}
+
+.modal .modal-content {
+    background-color: #F7F7F7;
+    border-radius: 120px;
+}
+
+.modal .modal-content .card {
+    background-color: transparent;
+}
+
+.modal .modal-content .GreyTitle {
+    font-size: 35px !important;
+}
+
+.modal .modal-content .circle, section.Profile .ProfileInfo .circle {
+    background-color: #EB8BB9;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+
+.modal .modal-content .circle img, section.Profile .ProfileInfo .circle img {
+    width: 50%;
+    margin: auto;
+}
+
+.modal .modal-content .list-group a {
+    color: #939597;
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#LogOutModal .modal-content .modal-body button, section.Profile button, .HomePageaAfterLogingIn .SideNav .tab-content button.GetStarted, .HomePageaAfterLogingIn .SideNav .tab-content form button {
+    background-color: #F990C2;
+    border: 2px solid #F990C2 !important;
+    color: white;
+    font-size: 20px;
+    padding: 10px 60px;
+    border-radius: 15px;
+    box-shadow: none !important;
+}
+
+.HomePageaAfterLogingIn .SideNav .tab-content form button {
+    border: 2px solid white !important;
+}
+
+#LogOutModal .modal-content .modal-body .btn:hover, section.Profile .btn-primary:hover, .HomePageaAfterLogingIn .SideNav .tab-content button.GetStarted:hover {
+    background-color: white !important;
+    color: #F990C2 !important;
+}
+
+button.btn-primary:focus {
+    background-color: white !important;
+    color: #F990C2 !important;
+}
+
+/********************
+******Side Menu****
+********************/
+
+.SideNav {
+    min-height: 100vh;
+}
+
+.SideNav .nav {
+    background-color: #F8f8f8;
+    border-radius: 20px;
+    flex-wrap: nowrap;
+    height: 60vh;
+    padding: 20px;
+    min-width: 90%;
+    padding-left: 0px;
+}
+
+.Scrollable-Part {
+    position: fixed;
+    right: 4%;
+    padding: 20px;
+    width: 23%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f8f8f8;
+    border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #EA8BB9;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #af678a;
+    border: 1px solid white;
+}
+
+.SideNav .nav #accordionExample .accordion-item {
+    border: none;
+    background-color: #F8F8F8;
+
+}
+
+.SideNav .nav #accordionExample .accordion-item .accordion-body {
+    padding: 10px 10px 5px 0px;
+
+    background-color: #F8F8F8;
+    margin-top: 10px;
+}
+
+.SideNav .nav .nav-link, .SideNav .nav #accordionExample .accordion-item .accordion-button button {
+    border: none;
+    text-align: right;
+    color: #9C9C9C;
+    line-height: unset;
+    font-size: 17px;
+    padding: 5px 10px;
+    background-color: transparent;
+}
+
+.SideNav .nav #accordionExample .accordion-item .accordion-button:not(.collapsed) {
+    box-shadow: none;
+    padding: 5px 10px 5px 0px;
+
+}
+
+.accordion-button:not(.collapsed)::after, .SideNav .nav #accordionExample .accordion-item .accordion-button::after {
+    display: none !important;
+}
+
+.SideNav .nav #accordionExample .accordion-item .accordion-button:not(.collapsed)::after, .SideNav .nav #accordionExample .accordion-item .accordion-button::after {
+    background-image: unset;
+    padding: unset;
+}
+
+.SideNav .nav .nav-link.PinkNavLink, .SideNav .nav button.nav-link.PinkNavLink {
+    background-color: #EB8BB9;
+    border-radius: 25px;
+    color: white;
+
+}
+
+.SideNav .nav.nav-pills .nav-link.active, .SideNav .nav.nav-pills .show>.nav-link {
+    background-color: transparent;
+    color: #EB8BB9 !important;
+
+}
+
+.SideNav .nav-link ul {
+    display: none !important;
+}
+
+.SideNav .accordion .accordion-button {
+    position: relative;
+    background-color: #F8F8F8;
+}
+
+.SideNav .accordion .accordion-button button {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    top: 0;
+    right: 0;
+    padding: 0;
+}
+
+.SideNav .AudioFile h2 {
+    color: #EA8BB9;
+    font-weight: bold;
+}
+
+.SideNav .AudioFile .form-range::-webkit-slider-thumb {
+    background: #EA8BB9;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.SideNav .AudioFile .form-range::-moz-range-thumb {
+    background: #EA8BB9;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.SideNav .AudioFile .form-range::-ms-thumb {
+    background: #EA8BB9;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.SideNav .DownloadAudio a {
+    color: #EA8BB9;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/********************
+****** Programs ****
+********************/
+section.program .card, section.specialOffer .card-group .card {
+    border-radius: 80px;
+}
+
+section.specialOffer .card-group .card {
+    height: 355px;
+}
+
+section.program .card .card-title, section.specialOffer .card-group .card .card-title {
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: unset;
+}
+
+section.program .card .card-text img {
+    width: 60px;
+}
+
+section.program .card .card-text, section.program .card-group .card button, section.specialOffer .card-group .card button {
+    font-size: 16px;
+}
+
+
+
+section.program .row .card-group:first-child .col-md-4:nth-child(1) .card, section.specialOffer .card-group:first-child .col-md-4:nth-child(1) .card {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 80px !important;
+}
+
+section.program .row .card-group:first-child .col-md-4:nth-child(3) .card, section.specialOffer .card-group:first-child .col-md-4:nth-child(3) .card {
+    border-radius: 80px !important;
+
+    border-top-left-radius: 0 !important;
+
+}
+
+section.program .row .card-group:last-child .col-md-4:nth-child(1) .card, section.specialOffer .card-group:last-child .col-md-4:nth-child(1) .card {
+    border-bottom-right-radius: 0;
+}
+
+section.program .row .card-group:last-child .col-md-4:nth-child(3) .card, section.specialOffer .card-group:last-child .col-md-4:nth-child(3) .card {
+    border-bottom-left-radius: 0;
+
+}
+
+section.program .row .card-group:first-child .col-md-4:nth-child(2) .card, section.program .row .card-group:last-child .col-md-4:nth-child(2) .card, section.specialOffer .card-group:first-child .col-md-4:nth-child(2) .card, section.specialOffer .card-group:last-child .col-md-4:nth-child(2) .card {
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+}
+
+
+section.ProgramDate .UploadImage, section.ProgramDate .ProgramDateDiv {
+    height: 350px;
+}
+
+/***************************
+***************Get Started****
+****************************/
+.HomePageaAfterLogingIn .SideNav .tab-content .UploadStoryVideo {
+    background-color: #F1F1F1 !important;
+}
+
+.HomePageaAfterLogingIn .SideNav .tab-content .CommentCards .UserComment p.UserCommentName {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.HomePageaAfterLogingIn .SideNav .tab-content .CommentCards .UserComment .card {
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.226));
+    border-radius: 80px;
+}
+
+.ReplyComment .card {
+    filter: none !important;
+    border: none !important;
+    width: 100%;
+}
+
+.HomePageaAfterLogingIn .SideNav .tab-content .CommentCards .UserComment p.card-title.UserCommentName span.CommentDate, .HomePageaAfterLogingIn .SideNav .tab-content .CommentCards .UserComment p.card-text.stars span {
+
+    font-size: 14px;
+    color: #767676;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.HomePageaAfterLogingIn .SideNav .tab-content .CommentCards .UserComment p.card-text.stars {
+    color: #FFC107;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+
+.HomePageaAfterLogingIn .SideNav .tab-content .CommentCards .UserComment p.card-text.CommentContent {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    color: #939597c5;
+    margin-bottom: 20px;
+}
+
+.HomePageaAfterLogingIn .SideNav .tab-content .CommentCards .UserComment .card-buttons button.LikeBtn {
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    color: #767676c9;
+    font-weight: bold;
+    box-shadow: none;
+}
+
+.HomePageaAfterLogingIn .SideNav .tab-content .CommentCards .UserComment .card-buttons button.LikeBtn svg {
+    font-size: 21px;
+}
+
+.HomePageaAfterLogingIn .SideNav .tab-content .CommentCards .UserComment .card-buttons button.ReplyBtn {
+    background-color: #F883BB;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 7px 25px;
+    border: 1px solid #F883BB;
+    box-shadow: none;
+}
+
+.HomePageaAfterLogingIn .SideNav .tab-content .CommentCards .UserComment .card-buttons button.ReplyBtn:hover {
+    background-color: white;
+    color: #F883BB;
+}
+
+/***************************
+***************Inspiring Story + AddingStory****
+****************************/
+body.HomePageaAfterLogingIn #v-pills-Stories a.UploadStoryLabel {
+    padding: 10px 30px;
+    background-color: #EB8BB9;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+body.HomePageaAfterLogingIn #v-pills-Stories .card {
+    background-color: #F990C2;
+    border-radius: 84px;
+    color: white;
+    border: none;
+    overflow: hidden;
+}
+
+body.HomePageaAfterLogingIn #v-pills-Stories .card .card-body {
+    padding-left: 0;
+}
+
+body.HomePageaAfterLogingIn #v-pills-Stories .card .card-body .card-text {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+body.UploadStory {
+    background-color: #F6F6F6;
+}
+
+section.UploadStoryBody .UploadStoryForm {
+    width: 75%;
+}
+
+section.UploadStoryBody .UploadStoryForm .UploadBtn {
+    width: 30%;
+    padding: 10px 0px !important;
+    font-weight: 500;
+    color: white;
+    background-color: #F990C2;
+    border-radius: 18px;
+    border: 1px solid white;
+}
+
+section.UploadStoryBody .UploadStoryForm .UploadStoryVideo, .HomePageaAfterLogingIn .SideNav .tab-content .UploadStoryVideo {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    background-color: white;
+}
+
+section.UploadStoryBody .UploadStoryForm .UploadStoryVideo span, .HomePageaAfterLogingIn .SideNav .tab-content .UploadStoryVideo span {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #F990C2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+section.UploadStoryBody .UploadStoryForm .UploadStoryVideo, .HomePageaAfterLogingIn .SideNav .tab-content .UploadStoryVideo {
+    position: relative;
+}
+
+section.UploadStoryBody .UploadStoryForm .UploadStoryVideo .videoTime .circle, .HomePageaAfterLogingIn .SideNav .tab-content .videoTime .circle {
+    width: 30px;
+    height: 30px;
+    background-color: #F990C2;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+section.UploadStoryBody .UploadStoryForm .UploadStoryVideo .videoTime .pinkline, .HomePageaAfterLogingIn .SideNav .tab-content .videoTime .pinkline {
+    width: 90%;
+    height: 1px;
+    border: 0.5px solid #f990c344;
+    position: absolute;
+    bottom: 8%;
+    right: 5%;
+}
+
+section.UploadStoryBody .UploadStoryForm .Description {
+    width: 100%;
+    height: 150px;
+    border-radius: 24px;
+    background-color: white;
+    border: none;
+
+}
+
+section.UploadStoryBody .UploadStoryForm .UploadSelectLabel {
+    width: 100%;
+    text-align: right;
+    color: #939597;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+section.UploadStoryBody .UploadStoryForm select {
+    background-color: white;
+    border-radius: 24px;
+    border: none;
+    color: #939597;
+    font-size: 18px;
+    box-shadow: none;
+    font-weight: 500;
+}
+
+section.UploadStoryBody .UploadStoryForm .form-check .form-check-input, section.Profile .ProfileForm .form-check .form-check-input {
+    box-shadow: none;
+
+}
+
+section.UploadStoryBody .UploadStoryForm .form-check .form-check-input:checked, section.Profile .ProfileForm .form-check .form-check-input:checked {
+    background-color: #939597;
+    border: 1px solid #939597;
+    box-shadow: none;
+}
+
+section.UploadStoryBody .UploadStoryForm .form-check label {
+    color: #939597;
+}
+
+/***************************
+***************WhishList + Suggestions****
+****************************/
+section.WhishList .NoWhishlist {
+    display: none;
+}
+
+section.WhishList .card-group .card, section.Suggestions .card-group .card {
+    height: 300px !important;
+
+}
+
+section.WhishList .card-group .card img, section.Suggestions .card-group .card img {
+    z-index: 1;
+}
+
+section.WhishList .card-group .card .card-body, section.Suggestions .card-group .card .card-body {
+    z-index: 3;
+}
+
+section.WhishList .card-group .card .card-title, section.Suggestions .card-group .card .card-title {
+    font-size: 18px !important;
+    margin-top: 0 !important;
+}
+
+section.WhishList .card-group .card p, section.Suggestions .card-group .card p {
+    width: 100%;
+    position: absolute;
+    bottom: 30%;
+    right: 50%;
+    transform: translateX(50%);
+    color: white;
+    font-size: 600;
+    padding: 0 15px;
+}
+
+/***************************
+***************My Programs, programs, courses and lessons****
+****************************/
+body.HomePageaAfterLogingIn nav ol.breadcrumb li.breadcrumb-item a, body.HomePageaAfterLogingIn nav ol.breadcrumb li.breadcrumb-item.active, body.HomePageaAfterLogingIn nav ol.breadcrumb li.breadcrumb-item::before {
+    color: #F990C2;
+    font-weight: bold;
+}
+
+.breadcrumb-item::before {
+    content: '' !important;
+    background-image: url(../images/breadcrumbseperator.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin-left: 0.5rem;
+    padding-left: 0;
+    top: 50%;
+    width: 20px;
+}
+
+body.HomePageaAfterLogingIn .SideNav .ProgressBarLabel {
+    font-size: 25px;
+    font-weight: bolder;
+    color: #939597;
+    display: none;
+}
+
+body.HomePageaAfterLogingIn .SideNav .progress {
+    display: none;
+}
+
+body.HomePageaAfterLogingIn .SideNav .progress .bg-success {
+    background-color: #EB8BB9 !important;
+}
+
+.Chapter .ChaptersDiv .lessonNumber {
+    font-size: 30px;
+    color: #939597;
+    font-weight: bolder;
+}
+
+.Chapter .ChaptersDiv .LessonDetails p {
+    text-align: center;
+    color: #939597;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.Chapter .ChaptersDiv .LessonDetails p .LessonDuration, .Chapter .ChaptersDiv .LessonDetails p .LessonComplitationPercentage {
+
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+.Chapter .ChaptersDiv .LessonDescription {
+    color: #939597;
+    font-weight: 500;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.Chapter .ChaptersDiv .LessonVid {
+    position: relative;
+    padding: 0;
+}
+
+.Chapter .ChaptersDiv .LessonVid img {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.Chapter .ChaptersDiv .LessonVid .LessonVidText {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Chapter .ChaptersDiv .LessonVid .LessonVidText p {
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 0;
+    font-size: 25px;
+
+}
+
+.form-check-input {
+    box-shadow: none !important;
+}
+
+.form-check-input:checked {
+    background-color: #EB8BB9 !important;
+    border: 1px solid #EB8BB9 !important;
+}
+
+.Courses .ChapterDescription .ChapterNumber {
+    font-size: 35px;
+    font-weight: bolder;
+    color: #939597;
+}
+
+.Courses .ChapterDescription p {
+    font-size: 17px;
+    font-weight: 300;
+    color: #939597;
+
+}
+
+.Courses .ChapterDetails {
+    font-size: 25px;
+    font-weight: bolder;
+    color: #F990C2;
+    text-align: center;
+    line-height: 40px;
+}
+
+.Courses .ChapterDetails .ChapterComplitationPercentage, .Courses .ChapterDetails .ChapterDuration {
+    font-size: 35px;
+    font-weight: normal;
+
+}
+
+/***************************
+***************Calendar****
+****************************/
+
+td.fc-day {
+    background: #FFF;
+    border-radius: 14px;
+
+}
+
+td.fc-today {
+    background: #FFF;
+    position: relative;
+}
+
+.fc-first th {
+    background: white;
+    color: #939597;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.fc-event-inner {
+    background: #03a9f3;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 0px;
+}
+
+.fc {
+    direction: rtl;
+    text-align: right;
+}
+
+.fc table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html .fc,
+.fc table {
+    font-size: 1em;
+
+}
+
+.fc td {
+    padding: 0;
+    vertical-align: top;
+    width: 12.5%;
+    height: 125px;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    margin: 5px;
+}
+
+.fc th {
+    padding: 0;
+    vertical-align: top;
+    width: 12% !important;
+    height: 30px;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    margin: 5px;
+}
+
+
+
+/* Header
+------------------------------------------------------------------------*/
+
+.fc-header td {
+    white-space: nowrap;
+    padding: 10px;
+    width: 32% !important;
+    margin: 0 !important;
+    height: unset !important;
+}
+
+.fc-header-left {
+    width: 25%;
+    text-align: right;
+}
+
+.fc-header-center {
+    text-align: center;
+}
+
+.fc-header-right {
+    width: 25%;
+    text-align: left;
+}
+
+.fc-header-title {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.fc-header-title h2 {
+    margin-top: 0;
+    white-space: nowrap;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #939597;
+
+}
+
+span.fc-button {
+
+    border-color: #F990C2;
+    color: #F990C2;
+}
+
+.fc-state-down, .fc-state-active {
+    background-color: #F990C2;
+    color: #FFF !important;
+}
+
+.fc .fc-header-space {
+    padding-right: 10px;
+}
+
+.fc-header .fc-button {
+    margin-bottom: 1em;
+    vertical-align: top;
+}
+
+/* buttons edges butting together */
+
+.fc-header .fc-button {
+    margin-left: -1px;
+}
+
+.fc-header .fc-corner-right,
+/* non-theme */
+.fc-header .ui-corner-right {
+    /* theme */
+    margin-left: 0;
+    /* back to normal */
+}
+
+/* button layering (for border precedence) */
+
+.fc-header .fc-state-hover,
+.fc-header .ui-state-hover {
+    z-index: 2;
+}
+
+.fc-header .fc-state-down {
+    z-index: 3;
+}
+
+.fc-header .fc-state-active,
+.fc-header .ui-state-active {
+    z-index: 4;
+}
+
+
+
+/* Content
+------------------------------------------------------------------------*/
+
+.fc-content {
+    clear: both;
+    zoom: 1;
+    /* for IE7, gives accurate coordinates for [un]freezeContentHeight */
+}
+
+.fc-view {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+/* Cell Styles
+------------------------------------------------------------------------*/
+
+/* <th>, usually */
+.fc-widget-content {
+    /* <td>, usually */
+    border: 2px dashed #F990C2;
+}
+
+.fc-widget-header {
+    border-bottom: 1px solid #EEE;
+}
+
+
+.fc-state-highlight>div>div.fc-day-number {
+    background-color: #F990C2;
+    color: #FFFFFF !important;
+    border-radius: 50%;
+    margin: 4px;
+}
+
+.fc-cell-overlay {
+    /* semi-transparent rectangle while dragging */
+    background: #bce8f1;
+    opacity: .3;
+    filter: alpha(opacity=30);
+    /* for IE */
+}
+
+
+
+/* Buttons
+------------------------------------------------------------------------*/
+
+.fc-button {
+    position: relative;
+    display: inline-block;
+    padding: 0 .6em;
+    overflow: hidden;
+    height: 1.9em;
+    line-height: 1.9em;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.fc-state-default {
+    /* non-theme */
+    border: 1px solid;
+}
+
+.fc-state-default.fc-corner-left {
+    /* non-theme */
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.fc-state-default.fc-corner-right {
+    /* non-theme */
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+/*
+	Our default prev/next buttons use HTML entities like ‹ › « »
+	and we'll try to make them look good cross-browser.
+*/
+
+.fc-text-arrow {
+    margin: 0 .4em;
+    font-size: 2em;
+    line-height: 23px;
+    vertical-align: baseline;
+    /* for IE7 */
+}
+
+.fc-button-prev .fc-text-arrow,
+.fc-button-next .fc-text-arrow {
+    /* for ‹ › */
+    font-weight: bold;
+}
+
+/* icon (for jquery ui) */
+
+.fc-button .fc-icon-wrap {
+    position: relative;
+    float: right;
+    top: 50%;
+}
+
+.fc-button .ui-icon {
+    position: relative;
+    float: right;
+    margin-top: -50%;
+
+    *margin-top: 0;
+    *top: -50%;
+}
+
+
+.fc-state-default {
+    border-color: #F990C2;
+    color: #F990C2;
+}
+
+.fc-button-month.fc-state-default, .fc-button-agendaWeek.fc-state-default, .fc-button-agendaDay.fc-state-default {
+    min-width: auto;
+    text-align: center;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    display: none;
+}
+
+.fc-state-hover,
+.fc-state-down,
+.fc-state-active,
+.fc-state-disabled {
+    color: #ffffff !important;
+    background-color: #F990C2;
+}
+
+.fc-state-hover {
+    color: #F990C2;
+    text-decoration: none;
+    background-position: 100% -15px;
+    -webkit-transition: background-position 0.1s linear;
+    -moz-transition: background-position 0.1s linear;
+    -o-transition: background-position 0.1s linear;
+    transition: background-position 0.1s linear;
+}
+
+.fc-state-down,
+.fc-state-active {
+    background-color: #F990C2;
+    background-image: none;
+    outline: 0;
+    color: #FFFFFF;
+}
+
+.fc-state-disabled {
+    cursor: default;
+    background-image: none;
+    background-color: #F990C2;
+    filter: alpha(opacity=65);
+    box-shadow: none;
+    border: 1px solid #F990C2;
+    color: white;
+}
+
+
+
+/* Global Event Styles
+------------------------------------------------------------------------*/
+
+.fc-event-container>* {
+    z-index: 8;
+}
+
+.fc-event-container>.ui-draggable-dragging,
+.fc-event-container>.ui-resizable-resizing {
+    z-index: 9;
+}
+
+.fc-event {
+    border: 1px solid #FFF;
+    /* default BORDER color */
+    background-color: #FFF;
+    /* default BACKGROUND color */
+    color: #919191;
+    /* default TEXT color */
+    font-size: 12px;
+    cursor: default;
+}
+
+.fc-event.chill {
+    background-color: #f3dcf8;
+}
+
+.fc-event.info {
+    background-color: #c6ebfe;
+}
+
+.fc-event.important {
+    background-color: #FFBEBE;
+}
+
+.fc-event.success {
+    background-color: #BEFFBF;
+}
+
+.fc-event:hover {
+    opacity: 0.7;
+}
+
+a.fc-event {
+    text-decoration: none;
+}
+
+a.fc-event,
+.fc-event-draggable {
+    cursor: pointer;
+}
+
+.fc-rtl .fc-event {
+    text-align: left;
+}
+
+.fc-event-inner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    line-height: 15px;
+}
+
+.fc-event-time,
+.fc-event-title {
+    padding: 0 1px;
+}
+
+.fc .ui-resizable-handle {
+    display: block;
+    position: absolute;
+    z-index: 99999;
+    overflow: hidden;
+    /* hacky spaces (IE6/7) */
+    font-size: 300%;
+    /* */
+    line-height: 50%;
+    /* */
+}
+
+
+
+/* Horizontal Events
+------------------------------------------------------------------------*/
+
+.fc-event-hori {
+    border-width: 1px 0;
+    margin-bottom: 1px;
+}
+
+.fc-ltr .fc-event-hori.fc-event-start,
+.fc-rtl .fc-event-hori.fc-event-end {
+    border-right-width: 1px;
+    /*
+border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+*/
+}
+
+.fc-ltr .fc-event-hori.fc-event-end,
+.fc-rtl .fc-event-hori.fc-event-start {
+    border-left-width: 1px;
+    /*
+border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+*/
+}
+
+/* resizable */
+
+.fc-event-hori .ui-resizable-e {
+    top: 0;
+    /* importants override pre jquery ui 1.7 styles */
+    left: -3px;
+    width: 7px;
+    height: 100%;
+    cursor: e-resize;
+}
+
+.fc-event-hori .ui-resizable-w {
+    top: 0;
+    right: -3px;
+    width: 7px;
+    height: 100%;
+    cursor: w-resize;
+}
+
+.fc-event-hori .ui-resizable-handle {
+    _padding-bottom: 14px;
+    /* IE6 had 0 height */
+}
+
+
+
+/* Reusable Separate-border Table
+------------------------------------------------------------*/
+
+table.fc-border-separate {
+    border-collapse: separate;
+}
+
+
+
+.fc-border-separate th.fc-last,
+.fc-border-separate td.fc-last {
+    border-left-width: 2px;
+}
+
+
+
+
+.fc-border-separate tr.fc-last th {
+    border-bottom-width: 1px;
+    border-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+
+
+/* Month View, Basic Week View, Basic Day View
+------------------------------------------------------------------------*/
+
+.fc-grid th {
+    text-align: center;
+}
+
+.fc .fc-week-number {
+    width: 22px;
+    text-align: center;
+}
+
+.fc .fc-week-number div {
+    padding: 0 2px;
+}
+
+.fc-grid .fc-other-month .fc-day-number {
+    opacity: 1 !important;
+}
+
+.fc-grid .fc-day-number {
+    padding: 0 2px;
+}
+
+.fc-grid .fc-other-month {
+    background-color: #53609e1f;
+    border: none;
+}
+
+.fc-grid .fc-day-content {
+    clear: both;
+    padding: 2px 2px 1px;
+    /* distance between events and day edges */
+}
+
+/* event styles */
+
+.fc-grid .fc-event-time {
+    font-weight: bold;
+}
+
+/* right-to-left */
+
+.fc-rtl .fc-grid .fc-day-number {
+    float: right;
+}
+
+.fc-rtl .fc-grid .fc-event-time {
+    float: left;
+}
+
+
+
+/* Agenda Week View, Agenda Day View
+------------------------------------------------------------------------*/
+
+.fc-agenda table {
+    border-collapse: initial;
+}
+
+.fc-agenda-days th {
+    text-align: center;
+}
+
+.fc-agenda .fc-agenda-axis {
+    width: 50px;
+    padding: 0 4px;
+    vertical-align: middle;
+    text-align: left;
+    white-space: nowrap;
+    font-weight: normal;
+}
+
+.fc-agenda .fc-week-number {
+    font-weight: bold;
+}
+
+.fc-agenda .fc-day-content {
+    padding: 2px 2px 1px;
+}
+
+/* make axis border take precedence */
+
+.fc-agenda-days .fc-agenda-axis {
+    border-left-width: 1px;
+}
+
+.fc-agenda-days .fc-col0 {
+    border-right-width: 0;
+}
+
+/* all-day area */
+
+.fc-agenda-allday th {
+    border-width: 0 1px;
+}
+
+.fc-agenda-allday .fc-day-content {
+    min-height: 34px;
+    /* TODO: doesnt work well in quirksmode */
+    _height: 34px;
+}
+
+/* divider (between all-day and slots) */
+
+.fc-agenda-divider-inner {
+    height: 2px;
+    overflow: hidden;
+}
+
+.fc-widget-header .fc-agenda-divider-inner {
+    background: #eee;
+}
+
+/* slot rows */
+
+.fc-agenda-slots th {
+    border-width: 1px 1px 0;
+}
+
+.fc-agenda-slots td {
+    border-width: 1px 0 0;
+    background: none;
+}
+
+.fc-agenda-slots td div {
+    height: 20px;
+}
+
+.fc-agenda-slots tr.fc-slot0 th,
+.fc-agenda-slots tr.fc-slot0 td {
+    border-top-width: 0;
+}
+
+.fc-agenda-slots tr.fc-minor th.ui-widget-header {
+    *border-top-style: solid;
+    /* doesn't work with background in IE6/7 */
+}
+
+
+
+/* Vertical Events
+------------------------------------------------------------------------*/
+
+.fc-event-vert {
+    border-width: 0 1px;
+}
+
+.fc-event-vert.fc-event-start {
+    border-top-width: 1px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.fc-event-vert.fc-event-end {
+    border-bottom-width: 1px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+
+.fc-event-vert .fc-event-time {
+    white-space: nowrap;
+    font-size: 10px;
+}
+
+.fc-event-vert .fc-event-inner {
+    position: relative;
+    z-index: 2;
+}
+
+.fc-event-vert .fc-event-bg {
+    /* makes the event lighter w/ a semi-transparent overlay  */
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: .25;
+    filter: alpha(opacity=25);
+}
+
+.fc .ui-draggable-dragging .fc-event-bg,
+/* TODO: something nicer like .fc-opacity */
+.fc-select-helper .fc-event-bg {
+    display: none\9;
+    /* for IE6/7/8. nested opacity filters while dragging don't work */
+}
+
+/* resizable */
+
+.fc-event-vert .ui-resizable-s {
+    bottom: 0;
+    /* importants override pre jquery ui 1.7 styles */
+    width: 100%;
+    height: 8px;
+    overflow: hidden;
+    line-height: 8px;
+    font-size: 11px;
+    text-align: center;
+    cursor: s-resize;
+}
+
+.fc-agenda .ui-resizable-resizing {
+    /* TODO: better selector */
+    _overflow: hidden;
+}
+
+
+
+
+.fc-week .fc-day>div .fc-day-number {
+    font-size: 15px;
+    margin: 2px;
+    min-width: 19px;
+    padding: 6px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    color: #939597;
+}
+
+
+.fc-week .fc-day:hover .fc-day-number {
+    background-color: #B8B8B8;
+    border-radius: 50%;
+    color: #FFFFFF;
+    transition: background-color 0.2s;
+}
+
+.fc-week .fc-day.fc-state-highlight:hover .fc-day-number {
+    background-color: #F990C2;
+}
+
+.fc-button-today {
+    border: 1px solid rgba(255, 255, 255, .0);
+}
+
+.fc-view-agendaDay thead tr.fc-first .fc-widget-header {
+    text-align: left;
+    padding-left: 10px;
+}
+
+/*!
+ * FullCalendar v1.6.4 Print Stylesheet
+ * Docs & License: http://arshaw.com/fullcalendar/
+ * (c) 2013 Adam Shaw
+ */
+
+/*
+ * Include this stylesheet on your page to get a more printer-friendly calendar.
+ * When including this stylesheet, use the media='print' attribute of the <link> tag.
+ * Make sure to include this stylesheet IN ADDITION to the regular fullcalendar.css.
+ */
+
+
+/* Events
+-----------------------------------------------------*/
+
+.fc-event {
+    background: #fff;
+    color: #000;
+}
+
+/* for vertical events */
+
+.fc-event-bg {
+    display: none;
+}
+
+.fc-event .ui-resizable-handle {
+    display: none;
+}
+
+
+
+
+
+
+/***********************************************************************************************************************
+***********************************************************************************************************************
+*******************************************       Media   **************************************************************
+***********************************************************************************************************************
+***********************************************************************************************************************/
+@media (min-width: 1650px) {
+    Section.LoginBody .LoginForm input, Section.LoginBody .LoginForm select {
+        padding: 15px 110px 15px 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    section.program .card p.card-text {
+        margin-bottom: 10px;
+    }
+
+    header.header {
+        height: 50vh;
+    }
+
+    header.header .headerVid {
+        border-radius: 70px;
+    }
+
+    Section.LoginBody .LoginForm, section.CartBody .CartWhite {
+        width: 75% !important;
+        padding: 50px !important;
+        border-radius: 70px;
+
+    }
+
+    Section.LoginBody img {
+        right: -5%;
+        width: 200%;
+    }
+
+    nav ul.navbar-nav {
+        background-color: #eb8eba;
+        padding: 10px 20px 20px 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    nav ul.navbar-nav li {
+        text-align: left;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    nav ul.navbar-nav li .form-check .form-check-input {
+        float: unset;
+
+    }
+
+    nav#navbar input.form-control {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav#navbar .dropdown a.dropdown-toggle {
+        width: 100%;
+        margin: 0;
+    }
+
+    .navbar-toggler {
+        color: white;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none !important;
+    }
+
+    .rounded-pill {
+        font-size: 10px !important;
+        padding: 6px !important;
+    }
+
+    section.StayInTouch .UploadImage, section.StayInTouch .StayInTouchForm, body.HomePageaAfterLogingIn section.ProgramDate .UploadImage, body.HomePageaAfterLogingIn section.ProgramDate .ProgramDateDiv {
+        height: 400px;
+        border-radius: 70px;
+        width: 75%;
+        margin: auto;
+    }
+
+    section.PurshaseHistoryBody table thead tr th {
+        font-size: 20px;
+        padding: 10px 0px;
+    }
+
+    nav#navbar form.navForm svg {
+        right: 2%;
+    }
+}
+
+@media (max-width:767px) {
+    section.program .card-group .col-12, section.specialOffer .card-group .col-12 {
+        display: flex;
+        justify-content: center;
+    }
+
+    section.program .card, section.specialOffer .card-group .card {
+        width: 60%;
+    }
+
+
+    section.StayInTouch .StayInTouchForm h3 {
+        margin: 40px 0 40px 0;
+    }
+
+    footer.footer img.logoFooter {
+        width: 25%;
+    }
+
+    #LogOutModal .modal-content .modal-body button, section.Profile .ProfileForm button, .HomePageaAfterLogingIn .SideNav .tab-content button.GetStarted, .HomePageaAfterLogingIn .SideNav .tab-content form button {
+        padding: 10px 30px;
+        font-size: 12px;
+    }
+
+    header.header .headerVid .videoBox {
+        width: 70px;
+        height: 70px;
+    }
+
+    body.CartFull .OrderSummary {
+        margin-top: 30px;
+    }
+
+
+
+    .CourseDetails section.Subscibe button.SubscribBTn {
+        width: 80%;
+    }
+
+    Section.LoginBody .LoginForm, section.CartBody .CartWhite {
+        width: 100% !important;
+        border-radius: 50px;
+        padding: 50px 25px !important;
+
+    }
+
+    .fixedBtn .SubscribBTn {
+        width: 90%;
+    }
+
+    .CourseDetails section.ProgramAgenda .PrgoramAgendaCards .card .card-text {
+        font-size: 12px;
+    }
+
+    section.PurshaseHistoryBody table thead th {
+        padding: 10px 0;
+    }
+
+    section.PurshaseHistoryBody table thead th {
+        font-size: 20px;
+    }
+
+    section.PurshaseHistoryBody table tr td {
+        font-size: 12px;
+    }
+
+    nav#navbar form.navForm svg {
+        right: 4%;
+    }
+}
+
+@media (max-width: 575px) {
+    section.program .card, section.specialOffer .card-group .card {
+        width: 100%;
+    }
+
+    .modal .modal-content {
+        padding: 20px;
+        border-radius: 50px;
+    }
+
+    footer.footer img.logoFooter {
+        width: 30%;
+    }
+
+    footer.footer ul.list-group li.list-group-item a img {
+        width: 30px;
+    }
+
+    header.header {
+        height: 35vh;
+    }
+
+    header.header .headerVid .videoBox {
+        width: 50px;
+        height: 50px;
+    }
+
+    header.header .headerVid .videoBox svg {
+        font-size: 25px;
+    }
+
+    section.StayInTouch .UploadImage, section.StayInTouch .StayInTouchForm, body.HomePageaAfterLogingIn section.ProgramDate .UploadImage, body.HomePageaAfterLogingIn section.ProgramDate .ProgramDateDiv {
+        width: 100%;
+    }
+
+    .Courses .ChapterDetails {
+        font-size: 20px;
+    }
+
+    .Courses .ChapterDescription p {
+        font-size: 15px;
+    }
+
+    .offcanvas-start {
+        width: 100% !important;
+    }
+
+    section.UploadStoryBody .UploadStoryForm .UploadBtn {
+        width: 100%;
+    }
+
+    .title, .GreyTitle, .WhiteTitle {
+        font-size: 35px;
+
+    }
+
+    section.FAQsBody .accordion .accordion-item .accordion-header button, section.LegalBody .accordion .accordion-item .accordion-header button, .NotificationBody .accordion .accordion-item .accordion-header button {
+        font-size: 15px;
+        padding: 25px 30px;
+    }
+
+    section.FAQsBody .accordion .accordion-item .accordion-body, section.LegalBody .accordion .accordion-item .accordion-body, .NotificationBody .accordion .accordion-item .accordion-body {
+        padding: 20px 20px 40px 20px;
+    }
+
+    .fc-header td {
+        width: 33% !important;
+    }
+
+    .fc th {
+        width: 11.5% !important;
+    }
+
+    .fc td {
+        width: 11.5%;
+        height: 50px;
+    }
+
+    .fc-week .fc-day>div .fc-day-number {
+        font-size: 12px;
+    }
+
+    .rounded-start {
+        width: 30%;
+    }
+
+    .CourseDetails section.CoursesDivs .RefundDays .card .card-body p.card-text {
+        font-size: 20px;
+        padding: 20px 20px 20px 20px;
+        line-height: 36px;
+    }
+
+    .CourseDetails section.Subscibe button.SubscribBTn {
+        font-size: 17px;
+    }
+
+    .modal .modal-content .GreyTitle {
+        font-size: 20px !important;
+    }
+
+    .modal .modal-content .circle, section.Profile .ProfileInfo .circle {
+        width: 70px;
+        height: 70px;
+    }
+
+    section.PurshaseHistoryBody table thead tr th {
+        font-size: 12px;
+        padding: 10px 5px;
+    }
+
+    footer.footer h4 {
+        font-size: 30px;
+    }
+
+    footer.footer a, footer.footer p {
+        font-size: 20px;
+    }
+
+    nav#navbar form.navForm svg {
+        right: 6%;
+    }
+}
