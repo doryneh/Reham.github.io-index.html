@@ -9,16 +9,16 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <title>Notification</title>
+    <title>CartFull</title>
 </head>
 
-<body class="CartFull">
+<body>
 
     <!--Navbar-->
 
     <nav class="navbar navbar-expand-lg sticky-top " id="navbar">
         <div class="container-fluid">
-            <a class="navbar-brand" href="LandingPageAfterLogin.html"><img src="images/logo.svg" alt="Logo"></a>
+            <a class="navbar-brand" href="AllPrograms.html"><img src="images/logo.svg" alt="Logo"></a>
 
             <div class="dropdown d-lg-block d-none">
                 <a class="btn btn-secondary dropdown-toggle me-3" href="#" role="button" id="dropdownMenuLink"
@@ -178,80 +178,120 @@
     </div>
 
 
-    <!--CartFull Body-->
-    <Section class="CartFullBody  my-5" id="CartFullBody">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="card mb-3 border-0">
-                        <div class="row g-0">
-                            <div class="col-2 d-flex justify-content-center align-items-center title mb-0"
-                                style="font-size: 80px;">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </div>
-                            <div class="col-10">
-                                <div class="card-body">
-                                    <h5 class="card-title GreyTitle">Shopping Cart</h5>
-                                    <h5 class="card-text" style="color: #939597;">2 items</h5>
+    
+                <!--CartFull Body-->
+                <Section class="CartFullBody  my-5" id="CartFullBody">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="card mb-3 border-0">
+                                    <div class="row g-0">
+                                        <div class="col-2 d-flex justify-content-center align-items-center title mb-0"
+                                            style="font-size: 80px;">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="card-body">
+                                                <h5 class="card-title GreyTitle">Shopping Cart</h5>
+                                                <h5 class="card-text" style="color: #939597;">2 items</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row CartItems">
+                                    <div class="col-md-6">
+                                        <div class="card px-3 py-4 RightTopCorner">
+                                            <img src="images/item.webp" class="card-img-top" alt="...">
+                                            <div class="card-body text-center">
+                                                <p class="card-title">Courses Name <span class="float-end">
+                                                        <i class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i></span></p>
+                                                <p class="card-text">Lorem Ipsum Dolor Sit Amet, Consetetur</p>
+                                                <h6 class="card-text"><s class="me-4"> $50.00 </s> <span>$29.00 </span>
+                                                </h6>
+
+                                                <a href="CourseDetailes.html" class="btn btn-primary">Go to course</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card px-3 py-4 RightTopCorner">
+                                            <img src="images/item.webp" class="card-img-top" alt="...">
+                                            <div class="card-body text-center">
+                                                <p class="card-title">Courses Name <span class="float-end"><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i><i
+                                                            class="fa-solid fa-star"></i></span></p>
+                                                <p class="card-text">Lorem Ipsum Dolor Sit Amet, Consetetur</p>
+                                                <h6 class="card-text"><s class="me-4"> $50.00 </s> <span>$29.00 </span>
+                                                </h6>
+
+                                                <a href="CourseDetailes.html" class="btn btn-primary">Go to course</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                            <div class="col-md-4">
+                                <div class="OrderSummary p-5">
+                                    <div>
+                                        <h3>Order Summary</h3>
+                                        <p class="ItemQuantity">Item Quantity <span class="float-end"><b>2</b></span>
+                                        </p>
+                                        <div class="OrderCoupon pt-3">
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control me-3" placeholder="Coupon Code"
+                                                    aria-label="Coupon Code" aria-describedby="button-addon2">
+                                                <button class="btn btn-primary" type="button"
+                                                    id="button-addon2">Apply</button>
+                                            </div>
+                                            <p class="ItemQuantity">Subtotal <span class="float-end"> 100 KD</span></p>
+                                            <p class="ItemQuantity">Discounted amount <span class="float-end">0
+                                                    KD</span></p>
 
-                    </div>
-                    <div class="row CartItems">
-                        <div class="col-md-6">
-                            <div class="card px-3 py-4 RightTopCorner">
-                                <img src="images/item.webp" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <p class="card-title">Courses Name <span class="float-end">
-                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                                class="fa-solid fa-star"></i></span></p>
-                                    <p class="card-text">Lorem Ipsum Dolor Sit Amet, Consetetur</p>
-                                    <h6 class="card-text"><s class="me-4"> $50.00 </s> <span>$29.00 </span></h6>
-
-                                    <a href="CourseDetailes.html" class="btn btn-primary">Go to course</a>
+                                        </div>
+                                    </div>
+                                    <div class="OrderTotalAndCheckOut">
+                                        <form action="">
+                                            <p class="OrderTotal mb-4 w-100">Total: <span class="float-end">$60</span>
+                                            </p>
+                                            <div class="form-check mt-3">
+                                                <input class="form-check-input" type="radio" name="exampleRadios"
+                                                    id="exampleRadios1" value="option1">
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                    <p>k-net</p>
+                                                </label>
+                                            </div>
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input" type="radio" name="exampleRadios"
+                                                    id="exampleRadios2" value="option2" required>
+                                                <label class="form-check-label" for="exampleRadios2">
+                                                    <p>Credit card</p>
+                                                </label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary px-5 mt-4">Pay Now </button>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card px-3 py-4 RightTopCorner">
-                                <img src="images/item.webp" class="card-img-top" alt="...">
-                                <div class="card-body text-center">
-                                    <p class="card-title">Courses Name <span class="float-end"><i
-                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                                class="fa-solid fa-star"></i></span></p>
-                                    <p class="card-text">Lorem Ipsum Dolor Sit Amet, Consetetur</p>
-                                    <h6 class="card-text"><s class="me-4"> $50.00 </s> <span>$29.00 </span></h6>
 
-                                    <a href="CourseDetailes.html" class="btn btn-primary">Go to course</a>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="OrderSummary p-5">
-                        <h3>Order Summary</h3>
-                        <p class="ItemQuantity">Item Quantity <span class="float-end"><b>2</b></span></p>
-                        <div class="OrderTotalAndCheckOut">
-                            <p class="OrderTotal mb-4 w-100">Total: <span class="float-end">$60</span></p>
-                            <button type="button" class="btn btn-primary px-5">Check Out </button>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-        </div>
-        </div>
-    </Section>
+            </Section>
 
-    <!--End CartFull Body-->
+            <!--End CartFull Body-->
+      
 
 
     <!--footer-->
-    <footer class="footer mt-3 pt-5 pb-4 ">
+    <footer class="footer pt-5 pb-4 ">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-2 text-center col-12 mb-4 mb-md-0">
@@ -261,7 +301,7 @@
                     <h4><b><i class="fa-solid fa-arrow-up-right-from-square me-3"></i> Useful Links </b></h4>
                     <a href="Login.html">Login</a>
                     <br>
-                    <a href="">Register For Free Content</a>
+                    <a href="Register.html">Register For Free Content</a>
                 </div>
                 <div class="col-sm-4 col-12  mt-4 mt-sm-0 text-center text-md-start">
                     <h4><b> About Us</b></h4>
@@ -270,7 +310,7 @@
                     <br>
                     <a href="FAQS.html">FAQs</a>
                     <br>
-                    <a href="">Legal</a>
+                    <a href="Legal.html">Legal</a>
 
                 </div>
                 <div class="col-sm-2 col-12  text-center mt-4 mt-sm-0 text-md-start">

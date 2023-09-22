@@ -51,7 +51,6 @@ $(".navForm").click(function(){
 
 
   $(document).ready(function(){
-  
     $('.Showpass').on('click', function(){
        var passInput=$(".password");
        if(passInput.attr('type')==='password')

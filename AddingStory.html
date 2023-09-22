@@ -12,13 +12,13 @@
     <title>Upload Story</title>
 </head>
 
-<body class="UploadStory">
+<body>
 
     <!--Navbar-->
 
     <nav class="navbar navbar-expand-lg sticky-top " id="navbar">
         <div class="container-fluid">
-            <a class="navbar-brand" href="LandingPageAfterLogin.html"><img src="images/logo.svg" alt="Logo"></a>
+            <a class="navbar-brand" href="AllPrograms.html"><img src="images/logo.svg" alt="Logo"></a>
 
             <div class="dropdown d-lg-block d-none">
                 <a class="btn btn-secondary dropdown-toggle me-3" href="#" role="button" id="dropdownMenuLink"
@@ -177,49 +177,51 @@
         </div>
     </div>
 
+    
+                <!--Upload Story Body-->
+                <section class="UploadStoryBody">
+                    <div class="container py-5">
 
-    <!--Upload Story Body-->
-    <section class="UploadStoryBody">
-        <div class="container py-5 d-flex justify-content-center">
-            <form action="LandingPageAfterLogin.html"
-                class="UploadStoryForm d-flex flex-column justify-content-center align-content-center text-center px-md-5">
-                <button type="button" class="btn btn-primary px-5  mb-5 align-self-center UploadBtn"><i
-                        class="fa-solid fa-plus me-3"></i> Upload
-                    Your Story </button>
-                <div class="UploadStoryVideo mb-4">
-                    <span> <i class="fa-solid fa-play"></i></span>
+                        <form action="LandingPageAfterLogin.html"
+                            class="UploadStoryForm d-flex flex-column justify-content-center align-content-center text-center px-md-5">
+                            <label for="UploadStoryBtn" class="px-5  mb-5 align-self-center UploadBtn"><i
+                                    class="fa-solid fa-plus me-3"></i> Upload
+                                Your Story </label>
+                            <input type="file" name="UploadStoryBtn" id="UploadStoryBtn" hidden>
+                            <iframe src="https://player.vimeo.com/video/253989945" webkitallowfullscreen mozallowfullscreen allowfullscreen  title="Video Title Here"></iframe>
 
-                    <div class="videoTime  px-4">
-                        <div class="circle"></div>
-                        <div class="pinkline"></div>
+                            <textarea name="Description" id="StoryDescription" cols="30" rows="10"
+                                placeholder="Description" class="Description py-4 px-5 mt-4" required></textarea>
+                            <label for="UploadFileSelect" class=" mt-4 mb-3 ms-5 float-start UploadSelectLabel">Upload
+                                File</label>
+                            <select class="form-select form-select-lg mb-3 px-5 py-3"
+                                aria-label=".form-select-lg example" id="UploadFileSelect" required>
+                                <option selected>Upload from computer </option>
+                                <option value="1">Upload from url</option>
+                            </select>
+                            <div class="form-check text-start mt-4 px-5">
+                                <input class="form-check-input me-3" type="checkbox" value="" id="flexCheckChecked"
+                                    checked required>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    I accept all terms and conditions.
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary px-5  mt-5 align-self-center UploadBtn">
+                                Submit </button>
+                        </form>
+
                     </div>
-                </div>
-                <textarea name="Description" id="StoryDescription" cols="30" rows="10" placeholder="Description"
-                    class="Description py-4 px-5" required></textarea>
-                <label for="UploadFileSelect" class=" mt-4 mb-3 ms-5 float-start UploadSelectLabel">Upload File</label>
-                <select class="form-select form-select-lg mb-3 px-5 py-3" aria-label=".form-select-lg example"
-                    id="UploadFileSelect" required>
-                    <option selected>Upload from computer </option>
-                    <option value="1">Upload from url</option>
-                </select>
-                <div class="form-check text-start mt-4 px-5">
-                    <input class="form-check-input me-3" type="checkbox" value="" id="flexCheckChecked" checked
-                        required>
-                    <label class="form-check-label" for="flexCheckChecked">
-                        I accept all terms and conditions.
-                    </label>
-                </div>
-                <button type="submit" class="btn btn-primary px-5  mt-5 align-self-center UploadBtn">
-                    Submit </button>
-            </form>
-
+                </section>
+                <!--End Upload Story Body-->
+            </div>
         </div>
-    </section>
-    <!--End Upload Story Body-->
+    </div>
+
+
 
 
     <!--footer-->
-    <footer class="footer mt-3 pt-5 pb-4 ">
+    <footer class="footer pt-5 pb-4 ">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-2 text-center col-12 mb-4 mb-md-0">
@@ -229,7 +231,7 @@
                     <h4><b><i class="fa-solid fa-arrow-up-right-from-square me-3"></i> Useful Links </b></h4>
                     <a href="Login.html">Login</a>
                     <br>
-                    <a href="">Register For Free Content</a>
+                    <a href="Register.html">Register For Free Content</a>
                 </div>
                 <div class="col-sm-4 col-12  mt-4 mt-sm-0 text-center text-md-start">
                     <h4><b> About Us</b></h4>
@@ -238,7 +240,7 @@
                     <br>
                     <a href="FAQS.html">FAQs</a>
                     <br>
-                    <a href="">Legal</a>
+                    <a href="Legal.html">Legal</a>
 
                 </div>
                 <div class="col-sm-2 col-12  text-center mt-4 mt-sm-0 text-md-start">

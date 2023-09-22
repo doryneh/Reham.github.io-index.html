@@ -14,13 +14,13 @@
     <title>Profile</title>
 </head>
 
-<body class="Profile">
+<body>
 
     <!--Navbar-->
 
     <nav class="navbar navbar-expand-lg sticky-top " id="navbar">
         <div class="container-fluid">
-            <a class="navbar-brand" href="LandingPageAfterLogin.html"><img src="images/logo.svg" alt="Logo"></a>
+            <a class="navbar-brand" href="AllPrograms.html"><img src="images/logo.svg" alt="Logo"></a>
 
             <div class="dropdown d-lg-block d-none">
                 <a class="btn btn-secondary dropdown-toggle me-3" href="#" role="button" id="dropdownMenuLink"
@@ -178,119 +178,124 @@
         </div>
     </div>
 
-    <!--Profile Body-->
-    <section class="Profile" id="Profile">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-5 py-5 px-4 ProfileInfo  text-center">
-                    <div class="changeProfile position-relative w-100">
-                        <label class="circle mx-auto mb-4 position-relative" for="UploadPhotoBtn">
-                            <img src="images/logo.svg" alt="ProfilePhoto">
-                            <button id="UploadPhotoBtn" type="button"
-                                class="btn btn-primary w-100 h-100 position-absolute" hidden data-bs-toggle="modal"
-                                data-bs-target="#UploadPhoto">
-                                Launch static backdrop modal
-                            </button>
 
-                        </label>
-                        <div class="modal fade" id="UploadPhoto" data-bs-backdrop="static" data-bs-keyboard="false"
-                            tabindex="-1" aria-labelledby="UploadPhotoLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h2 class="text-center w-100" style="color: #767676;"><b> Upload Image </b></h2>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"><i class="fa-solid fa-x"></i></button>
+   
+                <!--Profile Body-->
+                <section class="Profile" id="Profile">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-5 py-5 px-4 ProfileInfo  text-center">
+                                <div class="changeProfile position-relative w-100">
+                                    <label class="circle mx-auto mb-4 position-relative" for="UploadPhotoBtn">
+                                        <img src="images/logo.svg" alt="ProfilePhoto">
+                                        <button id="UploadPhotoBtn" type="button"
+                                            class="btn btn-primary w-100 h-100 position-absolute" hidden
+                                            data-bs-toggle="modal" data-bs-target="#UploadPhoto">
+                                            Launch static backdrop modal
+                                        </button>
 
-                                    </div>
-                                    <div class="modal-body p-3">
-                                        <div
-                                            class="UploadImage w-100 h-100 d-flex justify-content-center align-items-center position-relative">
-                                            <label for="UploadImageInput"
-                                                class="w-100 h-100  d-flex justify-content-center align-items-center position-relative">
-                                                <h5 class="m-auto"><b> Upload Image</b></h5>
-                                            </label>
-                                            <input type="file" id="UploadImageInput" class="position-absolute" hidden>
+                                    </label>
+                                    <div class="modal fade" id="UploadPhoto" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="UploadPhotoLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h2 class="text-center w-100" style="color: #767676;"><b> Upload
+                                                            Image </b></h2>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"><i class="fa-solid fa-x"></i></button>
+
+                                                </div>
+                                                <div class="modal-body p-3">
+                                                    <div
+                                                        class="UploadImage w-100 h-100 d-flex justify-content-center align-items-center position-relative">
+                                                        <label for="UploadImageInput"
+                                                            class="w-100 h-100  d-flex justify-content-center align-items-center position-relative">
+                                                            <h5 class="m-auto"><b> Upload Image</b></h5>
+                                                        </label>
+                                                        <input type="file" id="UploadImageInput"
+                                                            class="position-absolute" hidden>
+                                                    </div>
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="submit" class="btn btn-primary mx-auto"><b>Save</b>
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="submit" class="btn btn-primary mx-auto"><b>Save</b> </button>
                                     </div>
                                 </div>
+                                <div class="ProfileName GreyTitle mb-3 ">Vincent Coleman</div>
+                                <h2 class="ProfileEmail " style="color: #939597;">vincent@gmail.com</h2>
+                            </div>
+                            <div class="col-md-7 py-5 ProfileForm">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6 px-3 mb-4">
+                                            <label for="FirstName" class="form-label" style="color: #939597;"><b> First
+                                                    Name</b></label>
+                                            <input type="text" class="form-control" id="FirstName"
+                                                aria-describedby="FirstName" value="Vincent">
+                                        </div>
+                                        <div class="col-md-6 px-3 mb-4">
+                                            <label for="LastName" class="form-label" style="color: #939597;"><b> Last
+                                                    Name</b></label>
+                                            <input type="text" class="form-control" id="LastName"
+                                                aria-describedby="LastName" value="Coleman">
+                                        </div>
+                                        <div class="col-md-6 px-3 mb-4">
+                                            <label for="DateOfBirth" class="form-label" style="color: #939597;"><b>Date
+                                                    Of
+                                                    Birth</b></label>
+                                            <input type="date" class="form-control" id="DateOfBirth"
+                                                aria-describedby="DateOfBirth" value="2018-07-22">
+                                        </div>
+                                        <div class="col-md-6 px-3 mb-4">
+                                            <label for="Gender" class="form-label"
+                                                style="color: #939597;"><b>Gender</b></label>
+                                            <select class="form-select" aria-label="Default select example" id="Gender">
+                                                <option selected>Male</option>
+                                                <option value="1">Female</option>
+                                                <option value="2">Non-binary</option>
+                                                <option value="3">Prefer Not to say</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6 px-3 mb-4">
+                                            <label for="EmailAddress" class="form-label"
+                                                style="color: #939597;"><b>Email</b></label>
+                                            <input type="email" class="form-control" id="EmailAddress"
+                                                aria-describedby="EmailAddress" value="Vincent@gmail.com">
+                                        </div>
+                                        <div class="col-md-6 px-3 mb-4">
+                                            <label for="Nationality" class="form-label"
+                                                style="color: #939597;"><b>Nationality</b></label>
+                                            <select class="form-select" aria-label="Default select example"
+                                                id="Nationality">
+                                                <option selected>Lebanese</option>
+                                                <option value="1">Kuwaity</option>
+                                                <option value="2">Egyptian</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6 px-3 mb-4">
+                                            <label for="PhoneNumber" class="form-label" style="color: #939597;"><b>Phone
+                                                    number</b></label>
+                                            <input type="phone" class="form-control" id="PhoneNumber"
+                                                aria-describedby="PhoneNumber" value="+312598865477">
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary "><b>Save Changes </b> </button>
+
+                                </form>
                             </div>
                         </div>
                     </div>
-                    <div class="ProfileName GreyTitle mb-3 ">Vincent Coleman</div>
-                    <h2 class="ProfileEmail " style="color: #939597;">vincent@gmail.com</h2>
-                </div>
-                <div class="col-md-7 py-5 ProfileForm">
-                    <form>
-                        <div class="row">
-                            <div class="col-md-6 px-3 mb-4">
-                                <label for="FirstName" class="form-label" style="color: #939597;"><b> First
-                                        Name</b></label>
-                                <input type="text" class="form-control" id="FirstName" aria-describedby="FirstName"
-                                    value="Vincent">
-                            </div>
-                            <div class="col-md-6 px-3 mb-4">
-                                <label for="LastName" class="form-label" style="color: #939597;"><b> Last
-                                        Name</b></label>
-                                <input type="text" class="form-control" id="LastName" aria-describedby="LastName"
-                                    value="Coleman">
-                            </div>
-                            <div class="col-md-6 px-3 mb-4">
-                                <label for="DateOfBirth" class="form-label" style="color: #939597;"><b>Date Of
-                                        Birth</b></label>
-                                <input type="date" class="form-control" id="DateOfBirth" aria-describedby="DateOfBirth"
-                                    value="2018-07-22">
-                            </div>
-                            <div class="col-md-6 px-3 mb-4">
-                                <label for="Gender" class="form-label" style="color: #939597;"><b>Gender</b></label>
-                                <select class="form-select" aria-label="Default select example" id="Gender">
-                                    <option selected>Male</option>
-                                    <option value="1">Female</option>
-                                    <option value="2">Non-binary</option>
-                                    <option value="3">Prefer Not to say</option>
-                                </select>
-                            </div>
-                            <div class="col-md-6 px-3 mb-4">
-                                <label for="EmailAddress" class="form-label"
-                                    style="color: #939597;"><b>Email</b></label>
-                                <input type="email" class="form-control" id="EmailAddress"
-                                    aria-describedby="EmailAddress" value="Vincent@gmail.com">
-                            </div>
-                            <div class="col-md-6 px-3 mb-4">
-                                <label for="Nationality" class="form-label"
-                                    style="color: #939597;"><b>Nationality</b></label>
-                                <select class="form-select" aria-label="Default select example" id="Nationality">
-                                    <option selected>Lebanese</option>
-                                    <option value="1">Kuwaity</option>
-                                    <option value="2">Egyptian</option>
-                                </select>
-                            </div>
-                            <div class="col-md-6 px-3 mb-4">
-                                <label for="PhoneNumber" class="form-label" style="color: #939597;"><b>Phone
-                                        number</b></label>
-                                <input type="phone" class="form-control" id="PhoneNumber" aria-describedby="PhoneNumber"
-                                    value="+312598865477">
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary "><b>Save Changes </b> </button>
-
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End Profile Body-->
-
-
-
-
-
+                </section>
+                <!--End Profile Body-->
+          
     <!--footer-->
-    <footer class="footer mt-3 pt-5 pb-4 ">
+    <footer class="footer pt-5 pb-4 ">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-2 text-center col-12 mb-4 mb-md-0">
@@ -300,7 +305,7 @@
                     <h4><b><i class="fa-solid fa-arrow-up-right-from-square me-3"></i> Useful Links </b></h4>
                     <a href="Login.html">Login</a>
                     <br>
-                    <a href="">Register For Free Content</a>
+                    <a href="Register.html">Register For Free Content</a>
                 </div>
                 <div class="col-sm-4 col-12  mt-4 mt-sm-0 text-center text-md-start">
                     <h4><b> About Us</b></h4>
@@ -309,7 +314,7 @@
                     <br>
                     <a href="FAQS.html">FAQs</a>
                     <br>
-                    <a href="">Legal</a>
+                    <a href="Legal.html">Legal</a>
 
                 </div>
                 <div class="col-sm-2 col-12  text-center mt-4 mt-sm-0 text-md-start">
@@ -352,5 +357,6 @@
 <script src="assets/js/bootstrap.js"></script>
 <script src="assets/js/all.js"></script>
 <script src="js/js.js"></script>
+<script src="js/SideNavScroll.js"></script>
 
 </html>

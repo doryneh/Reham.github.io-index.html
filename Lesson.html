@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <title>Lesson One </title>
+</head>
+
+<body>
+
+    <!--Navbar-->
+
+    <nav class="navbar navbar-expand-lg sticky-top " id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="AllPrograms.html"><img src="images/logo.svg" alt="Logo"></a>
+
+            <div class="dropdown d-lg-block d-none">
+                <a class="btn btn-secondary dropdown-toggle me-3" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Programs <i class="fa-solid fa-sort-down float-start"></i>
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">منهج ريهام ديفا</a></li>
+                </ul>
+            </div>
+            <div class="position-relative d-lg-block d-none">
+                <form class="navForm">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="form-control me-2 " type="search" placeholder="Search Courses" aria-label="Search">
+                </form>
+            </div>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class=" navbar-collapse  collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav  align-items-center mb-2 mb-lg-0">
+                    <li class="nav-item d-lg-none d-block">
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle me-3" href="#" role="button"
+                                id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Programs <i class="fa-solid fa-sort-down float-start"></i>
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">منهج ريهام ديفا</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="nav-item position-relative  d-lg-none d-block">
+                        <form class="navForm">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input class="form-control me-2" type="search" placeholder="Search Courses"
+                                aria-label="Search">
+                        </form>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                <label class="form-check-label" for="flexSwitchCheckDefault">عربي</label>
+                            </div>
+                        </a>
+
+                    </li>
+                    <li class="nav-item position-relative me-3">
+                        <a class="nav-link" href="CartFull.html"><i class="fa-solid fa-bag-shopping me-2"></i> Cart </a>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-light text-black-50 border-dark">
+                            0
+                        </span>
+                    </li>
+
+                    <li class="nav-item position-relative  me-3">
+                        <a class="nav-link" href="Notification.html"><i class="fa-solid fa-bell"></i> </a>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-light text-black-50 border-dark">
+                            0
+                        </span>
+                    </li>
+                    <li class="nav-item position-relative me-3">
+                        <a class="nav-link" href="Profile.html"><i class="fa-solid fa-envelope me-2"></i> UserName </a>
+                    </li>
+                    <li class="nav-item  me-3 ">
+                        <a class="nav-link " href="#" data-bs-toggle="modal" data-bs-target="#ProfileModal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-person-circle me-2" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                            </svg>
+                            <i class="fa-solid fa-sort-down "></i>
+                            <!-- Button trigger modal -->
+
+
+
+                        </a>
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--End Navbar-->
+
+    <!-- Profile Modal -->
+    <div class="modal " id="ProfileModal" tabindex="2" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="z-index: 200000 !important;">
+            <div class="modal-content  RightTopCorner  p-md-5 ">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                            class="fa-solid fa-x"></i></button>
+                </div>
+                <div class="modal-body">
+                    <div class="card mb-3 border-0">
+                        <div class="row g-0">
+                            <div class="col-3 d-flex justify-content-center align-items-center title mb-0"
+                                style="font-size: 80px;">
+                                <div class="circle">
+                                    <img src="images/logo.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body pe-0 ps-2">
+                                    <h1 class="card-title GreyTitle"><b>Vincent Coleman</b> </h1>
+                                    <h5 class="card-text" style="color: #939597;">vincent@gmail.com</h5>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="list-group mt-4">
+                        <a href="Profile.html" class="list-group-item list-group-item-action">Update Profile</a>
+                        <a href="Payment.html" class="list-group-item list-group-item-action">Payment Method</a>
+                        <a href="ResetPassword.html" class="list-group-item list-group-item-action">Change Password</a>
+                        <a href="Legal.html" class="list-group-item list-group-item-action">Legal FAQs</a>
+                        <a href="TechnicalSupport.html" class="list-group-item list-group-item-action">Technical
+                            Support</a>
+                        <a href="#" class="list-group-item list-group-item-action" data-bs-toggle="modal"
+                            data-bs-target="#LogOutModal" data-bs-dismiss="modal" aria-label="Close">Log Out</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--LogOut Modal -->
+    <div class="modal fade" id="LogOutModal" tabindex="-1" aria-labelledby="LogOutModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-5  RightTopCorner">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                            class="fa-solid fa-x"></i></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="GreyTitle"> Logout</div>
+                    <h5 class="my-4" style="color: #939597;">Are you sure you want to exit.</h5>
+                    <br>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-primary me-5">No</button>
+                        <button type="button" class="btn btn-primary">Yes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+                <!--Lessons-->
+                <section class="Lesson py-5 px-md-3" id="">
+                    <div class="container-fluid">
+                        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+                            aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#"><i class="fa-solid fa-house"></i></a>
+                                </li>
+                                <li class="breadcrumb-item"><a href="#">My Programs</a></li>
+                                <li class="breadcrumb-item"><a href="#">Course 1</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Chapter 1</li>
+                                <li class="breadcrumb-item active" aria-current="page">Lesson 1</li>
+
+                            </ol>
+                        </nav>
+                        <h3 style="color: #939597 ;">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing
+                            Elitr, Sed Diam
+                        </h3>
+                        <h6 style="color: #939597 ;">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr,
+                            Sed
+                            Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam
+                            Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stet Clita Kasd
+                            Gubergren, No Sea Takimata Lorem Ipsum</h6>
+                            <div class="iframeContainer">
+                            <iframe src="https://player.vimeo.com/video/253989945" webkitallowfullscreen mozallowfullscreen allowfullscreen  title="Video Title Here"></iframe>
+                        </div>
+                            <form>
+                            <div class="row my-4">
+                                <div class="col-md-3 col-6">
+                                    <button type="button" class="btn btn-primary px-0 w-100 mb-3"><b>Next Lesson
+                                        </b>
+                                    </button>
+                                </div>
+                                <div class="col-md-3 col-6">
+
+                                    <button type="link" class="btn btn-primary  px-0 w-100  mb-3"><a href="Quiz.html"
+                                            style="color: white;"><b>Attemp Quiz </b></a>
+
+                                    </button>
+                                </div>
+                                <div class="col-md-3 col-6">
+
+                                    <button type="link" class="btn btn-primary  px-0 w-100  mb-3"><a
+                                            href="AddingStory.html" style="color: white;"><b>Upload Story
+                                            </b></a>
+
+                                    </button>
+                                </div>
+                                <div class="col-md-3 col-6">
+
+                                    <button type="button" class="btn btn-primary  px-0 w-100  mb-3"><b>Related Link
+                                        </b>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row mt-3 justify-content-end mb-5">
+                                <div class="col-md-3 col-12 float-end text-center">
+
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label for="flexCheckDefault" style="color: #EA8BB9;"><b> Mark as Complete
+                                        </b></label>
+                                </div>
+                            </div>
+
+                            <div class="GreyTitle mb-3">
+                                Lesson Description
+                            </div>
+                            <h6 style="color: #939597 ;">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing
+                                Elitr,
+                                Sed
+                                Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed
+                                Diam
+                                Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stet Clita
+                                Kasd
+                                Gubergren, No Sea Takimata Lorem Ipsum</h6>
+                            <div class="GreyTitle mb-3 mt-5">
+                                Audio File
+                            </div>
+                           
+                                <div class="AudioFile">
+                                    <div class=" d-flex m-auto">
+                                      
+                                        <audio controls class="w-100 " id="AudioSound" controlsList="nodownload noplaybackrate">
+                                            <source src="https://media.geeksforgeeks.org/wp-content/uploads/20190531165842/Recording1514.ogg" type="audio/ogg">
+                                            <source src="https://media.geeksforgeeks.org/wp-content/uploads/20190531165842/Recording1514.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                               
+                                </div>
+                          
+                        </form>
+                        <div class="row my-5 DownloadAudio">
+                            <div class="col-sm-3 col-6 text-center">
+                                <a href="AudioFile.PDF">Download Pdf</a>
+                            </div>
+                            <div class="col-sm-3 col-6 text-center">
+
+                                <a href="AudioFile.text">Download Text</a>
+
+                            </div>
+                            <div class="col-sm-3 col-6 text-center">
+
+                                <a href="AudioFile.mp3">Download .mp3</a>
+
+                            </div>
+                            <div class="col-sm-3 col-6 text-center">
+                                <a href="AudioFile.mp4">Download .mp4</a>
+
+                            </div>
+                        </div>
+                        <!--Leave A COmment-->
+                        <form>
+                            <div class="row mt-5">
+
+                                <div class="col-12 px-3 mb-4">
+                                    <label for="Comment" class="form-label w-100"
+                                        style="color: #939597;font-size: 20px;"><b>Add a Comment <span
+                                                class="float-end">423</span></b> </label>
+
+                                    <textarea name="Comment" id="Comment" class="form-control p-5" cols="30" rows="10"
+                                        required placeholder="Comment"></textarea>
+                                </div>
+
+                            </div>
+                            <button type="submit" class="btn btn-primary float-end"><b>Submit Commment </b>
+                            </button>
+                        </form>
+                        <br>
+                        <!--Comment section-->
+                        <div class="row  d-flex justify-content-center align-items-center  mt-5">
+                            <div class="col-md-12">
+                                <div class="card border-0">
+                                    <div class="p-3">
+                                        <div class="GreyTitle mb-2">
+                                            Reviews
+                                        </div>
+                                    </div>
+                                    <div class="CommentCards">
+                                        <div class="UserComment">
+                                            <div class="card mb-3 p-3">
+                                                <div class="row g-0 justify-content-center align-items-center">
+                                                    <div class="col-2 text-center">
+                                                        <img src="images/CommentImage.png"
+                                                            class="img-fluid rounded-start w-75" alt="Comment Image">
+                                                    </div>
+                                                    <div class="col-10">
+                                                        <div class="card-body pe-0">
+                                                            <p class="card-title UserCommentName">User Name
+                                                                <span class="CommentDate ms-3">21/02/2022</span>
+                                                            </p>
+
+                                                            <p class="card-text stars"><i
+                                                                    class="fa-solid fa-star"></i><i
+                                                                    class="fa-solid fa-star"></i><i
+                                                                    class="fa-solid fa-star"></i><i
+                                                                    class="fa-solid fa-star"></i><i
+                                                                    class="fa-solid fa-star"></i>
+                                                                <span>(5.0)</span>
+                                                            </p>
+                                                            <p class="card-text CommentContent">Lorem Ipsum
+                                                                Dolor
+                                                                Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
+                                                                Nonumy Eirmod Tempor Invidunt Ut Labore Et
+                                                                Dolore
+                                                                Magna Aliquyam Erat, Sed Diam Voluptua. At Vero
+                                                                Eos
+                                                                Et Accusam Et Justo Duo Dolores Et Ea Rebum.
+                                                                Stet
+                                                                Clita Kasd Gubergren, No Sea Takimata</p>
+                                                            <div class="card-buttons">
+                                                                <button type="button"
+                                                                    class="btn btn-primary LikeBtn me-3">
+                                                                    <i class="fa-solid fa-thumbs-up me-1"></i>
+                                                                    34
+                                                                </button>
+                                                                <button type="button" class="btn btn-primary ReplyBtn">
+                                                                    Reply
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="ReplyComment  ">
+                                                    <div class="card mb-3 p-3  float-end">
+                                                        <div class="row g-0 justify-content-center align-items-center">
+                                                            <div class="col-2 text-center">
+                                                                <img src="images/CommentImage.png"
+                                                                    class="img-fluid rounded-start w-75"
+                                                                    alt="Comment Image">
+                                                            </div>
+                                                            <div class="col-10">
+                                                                <div class="card-body pe-0">
+                                                                    <p class="card-title UserCommentName">User
+                                                                        Name
+                                                                        <span class="CommentDate ms-3">21/02/2022</span>
+                                                                    </p>
+
+                                                                    <p class="card-text stars"><i
+                                                                            class="fa-solid fa-star"></i><i
+                                                                            class="fa-solid fa-star"></i><i
+                                                                            class="fa-solid fa-star"></i><i
+                                                                            class="fa-solid fa-star"></i><i
+                                                                            class="fa-solid fa-star"></i>
+                                                                        <span>(5.0)</span>
+                                                                    </p>
+                                                                    <p class="card-text CommentContent">Lorem
+                                                                        Ipsum
+                                                                        Dolor Sit Amet, Consetetur Sadipscing
+                                                                        Elitr,
+                                                                        Sed Diam Nonumy Eirmod Tempor Invidunt
+                                                                        Ut
+                                                                        Labore Et Dolore Magna Aliquyam Erat,
+                                                                        Sed
+                                                                        Diam Voluptua. At Vero Eos Et Accusam Et
+                                                                        Justo Duo Dolores Et Ea Rebum. Stet
+                                                                        Clita
+                                                                        Kasd Gubergren, No Sea Takimata</p>
+                                                                    <div class="card-buttons">
+                                                                        <button type="button"
+                                                                            class="btn btn-primary LikeBtn me-3">
+                                                                            <i class="fa-solid fa-thumbs-up me-1"></i>
+                                                                            34
+                                                                        </button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary ReplyBtn">
+                                                                            Reply
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+          
+    <!--footer-->
+    <footer class="footer pt-5 pb-4 ">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2 text-center col-12 mb-4 mb-md-0">
+                    <img src="images/logo.svg" alt="logo" class="logoFooter">
+                </div>
+                <div class="col-sm-4 col-12  mt-4 mt-sm-0  text-center text-md-start">
+                    <h4><b><i class="fa-solid fa-arrow-up-right-from-square me-3"></i> Useful Links </b></h4>
+                    <a href="Login.html">Login</a>
+                    <br>
+                    <a href="Register.html">Register For Free Content</a>
+                </div>
+                <div class="col-sm-4 col-12  mt-4 mt-sm-0 text-center text-md-start">
+                    <h4><b> About Us</b></h4>
+                    <a href="About.html">About</a>
+
+                    <br>
+                    <a href="FAQS.html">FAQs</a>
+                    <br>
+                    <a href="Legal.html">Legal</a>
+
+                </div>
+                <div class="col-sm-2 col-12  text-center mt-4 mt-sm-0 text-md-start">
+                    <h4><b> Contact</b></h4>
+                    <p>Reham@Mail.Com</p>
+                    <p>(207)701-9820</p>
+
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-10 text-center">
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item"><a href=""><img src="images/social Icons/FacebookIcon.svg"
+                                    alt="FacebookIcon"></a></li>
+                        <li class="list-group-item"><a href=""><img src="images/social Icons/TwitterIcon.svg"
+                                    alt="TwitterIcon"></a>
+                        </li>
+                        <li class="list-group-item"><a href=""><img src="images/social Icons/PinterestIcon.svg"
+                                    alt="PinterestIcon"></a></li>
+                        <li class="list-group-item"><a href=""><img src="images/social Icons/InstagramIcon.svg"
+                                    alt="InstagramIcon"></a></li>
+                        <li class="list-group-item"><a href=""><img src="images/social Icons/GoogleIcon.svg"
+                                    alt="GoogleIcon"></a>
+                        </li>
+                        <li class="list-group-item"><a href=""><img src="images/social Icons/LinkedInIcon.svg"
+                                    alt="LinkedInIcon"></a></li>
+                        <li class="list-group-item"><a href=""><b> English (UK)</b></a></li>
+                    </ul>
+                    <p class="mt-0"><b> Reham © 2022 </b></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--ENd FOoter-->
+</body>
+
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/all.js"></script>
+<script src="js/js.js"></script>
+
+</html>

@@ -11,9 +11,10 @@
 body {
     direction: ltr;
     font-family: CenturyGothic !important;
+    overflow-x: hidden
 }
 
-body.Login, body.Register, body.ForgotPassword, body.Cart, body.PurshaseHistory {
+section.LoginBody, section.CartBody, section.PurshaseHistoryBody {
     background-color: #EB8EBA
 }
 
@@ -404,7 +405,7 @@ End Special Offer Section
 Stay In Touch Section
 *****************
 *******************/
-section.StayInTouch .UploadImage, section.StayInTouch .StayInTouchForm, body.HomePageaAfterLogingIn section.ProgramDate .UploadImage, body.HomePageaAfterLogingIn section.ProgramDate .ProgramDateDiv {
+section.StayInTouch .UploadImage, section.StayInTouch .StayInTouchForm, section.ProgramDate .UploadImage, section.ProgramDate .ProgramDateDiv {
     background-color: #F883BB;
     color: white;
     text-align: center;
@@ -413,7 +414,7 @@ section.StayInTouch .UploadImage, section.StayInTouch .StayInTouchForm, body.Hom
     position: relative;
 }
 
-section.StayInTouch .UploadImage, section.AboutBody .UploadImage, body.HomePageaAfterLogingIn section.ProgramDate .UploadImage {
+section.StayInTouch .UploadImage, section.AboutBody .UploadImage, section.ProgramDate .UploadImage {
     font-size: 100px;
 }
 
@@ -647,6 +648,12 @@ Section.LoginBody .LoginForm button.position-relative svg {
 
 }
 
+.Invoicetext {
+    font-weight: bolder;
+    color: #767676;
+    font-size: 18px;
+}
+
 body.ForgotPassword input {
     font-size: 16px !important;
 }
@@ -672,20 +679,20 @@ section.CartBody .CartWhite {
     padding: 80px 50px 100px 50px;
 }
 
-body.CartFull .CartFullBody .CartItems .card {
+.CartFullBody .CartItems .card {
     border-radius: 90px;
     filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.13));
     border: none;
 }
 
-body.CartFull .CartFullBody .CartItems .card img {
+.CartFullBody .CartItems .card img {
     width: 100%;
     height: 100%;
     border-top-left-radius: 90px;
 
 }
 
-body.CartFull .CartFullBody .CartItems .card .card-title, body.CartFull .CartFullBody .CartItems .card h6.card-text {
+.CartFullBody .CartItems .card .card-title, .CartFullBody .CartItems .card h6.card-text {
     font-size: 20px;
     color: #939597;
     font-weight: bolder;
@@ -693,13 +700,13 @@ body.CartFull .CartFullBody .CartItems .card .card-title, body.CartFull .CartFul
     text-align: left;
 }
 
-body.CartFull .CartFullBody .CartItems .card .card-title span {
+.CartFullBody .CartItems .card .card-title span {
     color: #FFC107;
     font-size: 15px;
     margin-top: 5px;
 }
 
-body.CartFull .CartFullBody .CartItems .card p.card-text {
+.CartFullBody .CartItems .card p.card-text {
     font-size: 14px;
     color: #939597;
     margin-bottom: 15px;
@@ -707,11 +714,11 @@ body.CartFull .CartFullBody .CartItems .card p.card-text {
 
 }
 
-body.CartFull .CartFullBody .CartItems .card h6.card-text span {
+.CartFullBody .CartItems .card h6.card-text span {
     color: #1CF395;
 }
 
-body.CartFull .CartFullBody .CartItems .card a {
+.CartFullBody .CartItems .card a {
     background-color: #EB8BB9;
     border: 2px solid white;
     filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.13));
@@ -723,43 +730,44 @@ body.CartFull .CartFullBody .CartItems .card a {
     margin-top: 7px;
 }
 
-body.CartFull .OrderSummary {
+.OrderSummary {
     background-color: #F7F7F7;
     height: 100%;
     border-radius: 28px;
     filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.13));
-    position: relative;
     min-height: 500px;
-
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-around;
 }
 
-body.CartFull .OrderSummary h3 {
+.OrderSummary h3 {
     color: #939597;
     font-weight: bolder;
     font-size: 35px;
 }
 
-body.CartFull .OrderSummary p.ItemQuantity {
+.OrderSummary p.ItemQuantity {
     font-size: 25px;
     font-weight: 500;
     color: #939597;
     line-height: 50px;
-    border-bottom: 2px solid #70707069;
     padding-bottom: 30px;
 }
 
-body.CartFull .OrderSummary .OrderTotalAndCheckOut {
-    position: absolute;
-    bottom: 10%;
+.OrderSummary .OrderTotalAndCheckOut {
+
     font-size: 25px;
     font-weight: 500;
     color: #939597;
     line-height: 50px;
-    width: 78%;
+
+    border-top: 2px solid #70707069;
 
 }
 
-body.CartFull .OrderSummary .OrderTotalAndCheckOut button {
+.OrderSummary .OrderTotalAndCheckOut button {
     border-radius: 18px;
     background-color: #EB8BB9;
     color: white;
@@ -769,10 +777,44 @@ body.CartFull .OrderSummary .OrderTotalAndCheckOut button {
     border: 2px solid white;
 }
 
-body.CartFull .OrderSummary .OrderTotalAndCheckOut button:hover {
+.OrderSummary .OrderTotalAndCheckOut button:hover {
     background-color: white;
     color: #EB8BB9;
     border: 2px solid #EB8BB9;
+}
+
+.OrderSummary .OrderTotalAndCheckOut .form-check {
+    font-size: 15px;
+    height: fit-content;
+    line-height: 15px;
+
+}
+
+.OrderSummary .OrderTotalAndCheckOut .form-check p {
+    margin-bottom: 0;
+    height: fit-content;
+    line-height: 15px;
+    margin: 2px 0px auto 5px;
+}
+
+.OrderSummary .OrderCoupon button {
+    width: 25%;
+    border-radius: 5px !important;
+    font-size: 14px !important;
+    text-align: center;
+    padding: 5px 10px !important;
+}
+
+.OrderSummary .OrderCoupon {
+    border-top: 2px solid #70707069;
+
+}
+
+.OrderSummary .OrderCoupon p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+    ;
 }
 
 /***********************************************************************************************************************
@@ -849,11 +891,9 @@ section.FAQsBody .accordion .accordion-item .accordion-header button.accordion-b
 }
 
 section.FAQsBody .accordion .accordion-item .accordion-header button.accordion-button:not(.collapsed)::after, section.LegalBody .accordion .accordion-item .accordion-header button.accordion-button:not(.collapsed)::after, .NotificationBody .accordion .accordion-item .accordion-header button.accordion-button:not(.collapsed)::after {
-
-    background-image: url(../images/AccordionMinus.svg);
+    background-image: url(../images/AccordionMinus.svg) !important;
     background-position: center center;
     transform: unset;
-
 }
 
 section.FAQsBody .accordion .accordion-item, section.LegalBody .accordion .accordion-item, .NotificationBody .accordion .accordion-item {
@@ -877,47 +917,47 @@ section.FAQsBody .accordion .accordion-item .accordion-body, section.LegalBody .
 *******************************************       Course Details Page    **************************************************************
 ***********************************************************************************************************************
 ***********************************************************************************************************************/
-.CourseDetails header.header video {
+ iframe {
     width: 100%;
     height: 100%;
     z-index: 2;
     object-fit: cover;
-
+}
+.iframeContainer{
+    width: 100%;
+    height: 500px;
 }
 
-.CourseDetails section.CoursesDivs {
-    border-top: 3px solid white;
-}
 
-.CourseDetails section.CoursesDivs .card {
+section.CoursesDivs .card {
     background-color: transparent;
     border: none;
     color: #ffffff;
 }
 
-.CourseDetails section.CoursesDivs .BGwhite .card {
+section.CoursesDivs .BGwhite .card {
     background-color: transparent;
     border: none;
     color: #767676;
 }
 
-.CourseDetails section.CoursesDivs .card .card-title {
+section.CoursesDivs .card .card-title {
     font-weight: bolder;
     margin-bottom: 20px;
 }
 
-.CourseDetails section.CoursesDivs .card .card-body .card-text {
+section.CoursesDivs .card .card-body .card-text {
     font-size: 17px;
     line-height: 28px;
 }
 
-.CourseDetails section.CoursesDivs .RefundDays .card .card-body p.card-text {
+section.CoursesDivs .RefundDays .card .card-body p.card-text {
     font-size: 25px;
     padding: 50px 50px 50px 0px;
     line-height: 45px;
 }
 
-.CourseDetails section.Subscibe button.SubscribBTn {
+section.Subscibe button.SubscribBTn {
     width: 40%;
     padding: 20px;
     position: relative;
@@ -927,7 +967,7 @@ section.FAQsBody .accordion .accordion-item .accordion-body, section.LegalBody .
     font-weight: bolder;
 }
 
-.CourseDetails section.Subscibe button.SubscribBTn:hover,
+section.Subscibe button.SubscribBTn:hover,
 .fixedBtn .SubscribBTn:hover {
     color: #539153 !important;
     background-color: white !important;
@@ -935,7 +975,7 @@ section.FAQsBody .accordion .accordion-item .accordion-body, section.LegalBody .
 
 }
 
-.CourseDetails section.Subscibe button.SubscribBTn img {
+section.Subscibe button.SubscribBTn img {
     height: 250%;
     position: absolute;
     left: -20%;
@@ -973,17 +1013,17 @@ section.FAQsBody .accordion .accordion-item .accordion-body, section.LegalBody .
 }
 
 
-.CourseDetails section.ProgramAgenda {
+section.ProgramAgenda {
     background-color: #d3d3d3;
 }
 
-.CourseDetails section.ProgramAgenda .BGwhite {
+section.ProgramAgenda .BGwhite {
     border-radius: 40px;
     color: #767676;
     font-weight: 500;
 }
 
-.CourseDetails section.ProgramAgenda .nav-tabs .nav-link {
+section.ProgramAgenda .nav-tabs .nav-link {
     background-color: white;
     width: 100%;
     border: 1px solid #F990C2;
@@ -992,7 +1032,7 @@ section.FAQsBody .accordion .accordion-item .accordion-body, section.LegalBody .
     border-radius: 0;
 }
 
-.CourseDetails section.ProgramAgenda .tab-content {
+section.ProgramAgenda .tab-content {
     border-top: none;
     border: 1px solid #F990C2;
 }
@@ -1002,7 +1042,7 @@ section.FAQsBody .accordion .accordion-item .accordion-body, section.LegalBody .
     color: white !important;
 }
 
-.CourseDetails section.ProgramAgenda .nav {
+section.ProgramAgenda .nav {
     display: flex;
     flex-wrap: nowrap;
     padding-left: 0;
@@ -1013,7 +1053,7 @@ section.FAQsBody .accordion .accordion-item .accordion-body, section.LegalBody .
     align-items: stretch;
 }
 
-.CourseDetails section.ProgramAgenda .PrgoramAgendaCards .card {
+section.ProgramAgenda .PrgoramAgendaCards .card {
     background-color: transparent;
     border: 0;
     text-align: center;
@@ -1022,7 +1062,7 @@ section.FAQsBody .accordion .accordion-item .accordion-body, section.LegalBody .
     padding: 2px;
 }
 
-.CourseDetails section.ProgramAgenda .PrgoramAgendaCards .card .card-text {
+section.ProgramAgenda .PrgoramAgendaCards .card .card-text {
     color: #F990C2;
     font-size: 14px;
     font-weight: bold;
@@ -1055,21 +1095,21 @@ section.Profile .ProfileInfo .modal .modal-body .UploadImage {
     border: 3px dashed black;
 }
 
-section.Profile .ProfileForm form input, section.Profile .ProfileForm form select, section.Profile .ProfileForm form textarea, .HomePageaAfterLogingIn .SideNav .tab-content form textarea {
-    background-color: #F1F1F1;
-    color: black;
-    border-radius: 15px;
+section.Profile .ProfileForm form input, section.Profile .ProfileForm form select, section.Profile .ProfileForm form textarea, form textarea {
+    background-color: #F1F1F1 !important;
+    color: black !important;
+    border-radius: 15px !important;
     padding: 15px;
     filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.219));
     box-shadow: none !important;
     text-align: left;
 }
 
-section.Profile .ProfileForm form textarea, .HomePageaAfterLogingIn .SideNav .tab-content form textarea {
+section.Profile .ProfileForm form textarea, form textarea {
     height: 200px;
 }
 
-section.Profile .ProfileForm form label, .HomePageaAfterLogingIn .SideNav .tab-content form label {
+section.Profile .ProfileForm form label, form label {
     padding-left: 10px;
     font-family: lato-regular;
 }
@@ -1181,7 +1221,7 @@ section.PurshaseHistoryBody table .DownloadBtnTabel {
 .SmallSideNav {
     position: fixed;
     left: 0;
-    top: 130px;
+    top: 80px;
     z-index: 250;
     background-color: #f7f7f7 !important;
     border: 2px solid #e2e2e2 !important;
@@ -1255,7 +1295,7 @@ section.PurshaseHistoryBody table .DownloadBtnTabel {
     font-size: 20px;
 }
 
-#LogOutModal .modal-content .modal-body button, section.Profile button, .HomePageaAfterLogingIn .SideNav .tab-content button.GetStarted, .HomePageaAfterLogingIn .SideNav .tab-content form button {
+#LogOutModal .modal-content .modal-body button, section.Profile button, section.GetStartedPage button.GetStartedBtn, .Lesson form button, .OrderSummary .OrderCoupon button {
     background-color: #F990C2;
     border: 2px solid #F990C2 !important;
     color: white;
@@ -1265,13 +1305,18 @@ section.PurshaseHistoryBody table .DownloadBtnTabel {
     box-shadow: none !important;
 }
 
-.HomePageaAfterLogingIn .SideNav .tab-content form button {
+form button {
     border: 2px solid white !important;
 }
 
-#LogOutModal .modal-content .modal-body .btn:hover, section.Profile .btn-primary:hover, .HomePageaAfterLogingIn .SideNav .tab-content button.GetStarted:hover {
+#LogOutModal .modal-content .modal-body .btn:hover, section.Profile .btn-primary:hover, section.GetStartedPage button.GetStartedBtn:hover, .Lesson form button:hover, .OrderSummary .OrderCoupon button:hover {
     background-color: white !important;
     color: #F990C2 !important;
+}
+
+.Lesson form button:hover a {
+    color: #F990C2 !important;
+
 }
 
 button.btn-primary:focus {
@@ -1285,6 +1330,7 @@ button.btn-primary:focus {
 
 .SideNav {
     min-height: 100vh;
+
 }
 
 .SideNav .nav {
@@ -1299,9 +1345,10 @@ button.btn-primary:focus {
 
 .Scrollable-Part {
     position: fixed;
-    left: 4%;
+    left: 1%;
     padding: 20px;
-    width: 23%;
+    width: 25%;
+
 }
 
 /* width */
@@ -1335,7 +1382,7 @@ button.btn-primary:focus {
 }
 
 .SideNav .nav #accordionExample .accordion-item .accordion-body {
-    padding: 10px 0px 5px 10px;
+    padding: 0px 0px 5px 10px;
 
     background-color: #F8F8F8;
     margin-top: 10px;
@@ -1344,20 +1391,26 @@ button.btn-primary:focus {
 .SideNav .nav .nav-link, .SideNav .nav #accordionExample .accordion-item .accordion-button button {
     border: none;
     text-align: left;
-    color: #9C9C9C;
     line-height: unset;
     font-size: 17px;
     padding: 5px 10px;
     background-color: transparent;
+    width: 100%;
+    color: #9C9C9C;
+
+}
+
+.SideNav .nav button a, .SideNav .nav button span {
+    color: #9C9C9C !important;
+
 }
 
 .SideNav .nav #accordionExample .accordion-item .accordion-button:not(.collapsed) {
     box-shadow: none;
-    padding: 5px 0px 5px 10px;
 
 }
 
-.accordion-button:not(.collapsed)::after, .SideNav .nav #accordionExample .accordion-item .accordion-button::after {
+.SideNav .nav #accordionExample .accordion-item .accordion-button::after {
     display: none !important;
 }
 
@@ -1386,6 +1439,10 @@ button.btn-primary:focus {
 .SideNav .accordion .accordion-button {
     position: relative;
     background-color: #F8F8F8;
+    padding: 0;
+    display: inline-block;
+    width: unset;
+    float: right;
 }
 
 .SideNav .accordion .accordion-button button {
@@ -1397,36 +1454,44 @@ button.btn-primary:focus {
     padding: 0;
 }
 
-.SideNav .AudioFile h2 {
+.AudioFile h2 {
     color: #EA8BB9;
     font-weight: bold;
 }
 
-.SideNav .AudioFile .form-range::-webkit-slider-thumb {
+.AudioFile .form-range::-webkit-slider-thumb {
     background: #EA8BB9;
     width: 20px;
     height: 20px;
     border-radius: 50%;
 }
 
-.SideNav .AudioFile .form-range::-moz-range-thumb {
+.AudioFile label {
+    width: 100%;
+}
+
+.AudioFile .form-range::-moz-range-thumb {
     background: #EA8BB9;
     width: 20px;
     height: 20px;
     border-radius: 50%;
 }
 
-.SideNav .AudioFile .form-range::-ms-thumb {
+.AudioFile .form-range::-ms-thumb {
     background: #EA8BB9;
     width: 20px;
     height: 20px;
     border-radius: 50%;
 }
 
-.SideNav .DownloadAudio a {
+.DownloadAudio a {
     color: #EA8BB9;
     font-size: 20px;
     font-weight: bolder;
+}
+.DownloadAudio a:hover{
+    color: #ca749e;
+
 }
 
 /********************
@@ -1492,17 +1557,17 @@ section.ProgramDate .UploadImage, section.ProgramDate .ProgramDateDiv {
 /***************************
 ***************Get Started****
 ****************************/
-.HomePageaAfterLogingIn .SideNav .tab-content .UploadStoryVideo {
+.UploadStoryVideo {
     background-color: #F1F1F1 !important;
 }
 
-.HomePageaAfterLogingIn .SideNav .tab-content .CommentCards .UserComment p.UserCommentName {
+.CommentCards .UserComment p.UserCommentName {
     font-size: 17px;
     font-weight: bold;
     margin-bottom: 0;
 }
 
-.HomePageaAfterLogingIn .SideNav .tab-content .CommentCards .UserComment .card {
+.CommentCards .UserComment .card {
     filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.226));
     border-radius: 80px;
 }
@@ -1513,7 +1578,7 @@ section.ProgramDate .UploadImage, section.ProgramDate .ProgramDateDiv {
     width: 100%;
 }
 
-.HomePageaAfterLogingIn .SideNav .tab-content .CommentCards .UserComment p.card-title.UserCommentName span.CommentDate, .HomePageaAfterLogingIn .SideNav .tab-content .CommentCards .UserComment p.card-text.stars span {
+.CommentCards .UserComment p.card-title.UserCommentName span.CommentDate, .CommentCards .UserComment p.card-text.stars span {
 
     font-size: 14px;
     color: #767676;
@@ -1521,14 +1586,14 @@ section.ProgramDate .UploadImage, section.ProgramDate .ProgramDateDiv {
     font-style: italic;
 }
 
-.HomePageaAfterLogingIn .SideNav .tab-content .CommentCards .UserComment p.card-text.stars {
+.CommentCards .UserComment p.card-text.stars {
     color: #FFC107;
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 0;
 }
 
-.HomePageaAfterLogingIn .SideNav .tab-content .CommentCards .UserComment p.card-text.CommentContent {
+.CommentCards .UserComment p.card-text.CommentContent {
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 0;
@@ -1536,7 +1601,7 @@ section.ProgramDate .UploadImage, section.ProgramDate .ProgramDateDiv {
     margin-bottom: 20px;
 }
 
-.HomePageaAfterLogingIn .SideNav .tab-content .CommentCards .UserComment .card-buttons button.LikeBtn {
+.CommentCards .UserComment .card-buttons button.LikeBtn {
     background-color: transparent;
     border: none;
     font-size: 17px;
@@ -1545,11 +1610,11 @@ section.ProgramDate .UploadImage, section.ProgramDate .ProgramDateDiv {
     box-shadow: none;
 }
 
-.HomePageaAfterLogingIn .SideNav .tab-content .CommentCards .UserComment .card-buttons button.LikeBtn svg {
+.CommentCards .UserComment .card-buttons button.LikeBtn svg {
     font-size: 21px;
 }
 
-.HomePageaAfterLogingIn .SideNav .tab-content .CommentCards .UserComment .card-buttons button.ReplyBtn {
+.CommentCards .UserComment .card-buttons button.ReplyBtn {
     background-color: #F883BB;
     color: white;
     font-size: 18px;
@@ -1559,7 +1624,7 @@ section.ProgramDate .UploadImage, section.ProgramDate .ProgramDateDiv {
     box-shadow: none;
 }
 
-.HomePageaAfterLogingIn .SideNav .tab-content .CommentCards .UserComment .card-buttons button.ReplyBtn:hover {
+.CommentCards .UserComment .card-buttons button.ReplyBtn:hover {
     background-color: white;
     color: #F883BB;
 }
@@ -1567,7 +1632,7 @@ section.ProgramDate .UploadImage, section.ProgramDate .ProgramDateDiv {
 /***************************
 ***************Inspiring Story + AddingStory****
 ****************************/
-body.HomePageaAfterLogingIn #v-pills-Stories a.UploadStoryLabel {
+section.InspiringStoriesSection a.UploadStoryLabel {
     padding: 10px 30px;
     background-color: #EB8BB9;
     color: white;
@@ -1576,7 +1641,7 @@ body.HomePageaAfterLogingIn #v-pills-Stories a.UploadStoryLabel {
     border-radius: 20px;
 }
 
-body.HomePageaAfterLogingIn #v-pills-Stories .card {
+section.InspiringStoriesSection .card {
     background-color: #F990C2;
     border-radius: 84px;
     color: white;
@@ -1584,22 +1649,20 @@ body.HomePageaAfterLogingIn #v-pills-Stories .card {
     overflow: hidden;
 }
 
-body.HomePageaAfterLogingIn #v-pills-Stories .card .card-body {
+section.InspiringStoriesSection .card .card-body {
     padding-right: 0;
 }
 
-body.HomePageaAfterLogingIn #v-pills-Stories .card .card-body .card-text {
+section.InspiringStoriesSection .card .card-body .card-text {
     font-size: 14px;
     line-height: 16px;
 }
 
-body.UploadStory {
+section.UploadStoryBody {
     background-color: #F6F6F6;
 }
 
-section.UploadStoryBody .UploadStoryForm {
-    width: 75%;
-}
+
 
 section.UploadStoryBody .UploadStoryForm .UploadBtn {
     width: 30%;
@@ -1611,7 +1674,7 @@ section.UploadStoryBody .UploadStoryForm .UploadBtn {
     border: 1px solid white;
 }
 
-section.UploadStoryBody .UploadStoryForm .UploadStoryVideo, .HomePageaAfterLogingIn .SideNav .tab-content .UploadStoryVideo {
+section.UploadStoryBody .UploadStoryForm .UploadStoryVideo, .UploadStoryVideo {
     width: 100%;
     height: 400px;
     display: flex;
@@ -1622,7 +1685,7 @@ section.UploadStoryBody .UploadStoryForm .UploadStoryVideo, .HomePageaAfterLogin
     background-color: white;
 }
 
-section.UploadStoryBody .UploadStoryForm .UploadStoryVideo span, .HomePageaAfterLogingIn .SideNav .tab-content .UploadStoryVideo span {
+section.UploadStoryBody .UploadStoryForm .UploadStoryVideo span, .UploadStoryVideo span {
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -1635,11 +1698,11 @@ section.UploadStoryBody .UploadStoryForm .UploadStoryVideo span, .HomePageaAfter
     font-size: 30px;
 }
 
-section.UploadStoryBody .UploadStoryForm .UploadStoryVideo, .HomePageaAfterLogingIn .SideNav .tab-content .UploadStoryVideo {
+section.UploadStoryBody .UploadStoryForm .UploadStoryVideo, .UploadStoryVideo {
     position: relative;
 }
 
-section.UploadStoryBody .UploadStoryForm .UploadStoryVideo .videoTime .circle, .HomePageaAfterLogingIn .SideNav .tab-content .videoTime .circle {
+section.UploadStoryBody .UploadStoryForm .UploadStoryVideo .videoTime .circle, .videoTime .circle {
     width: 30px;
     height: 30px;
     background-color: #F990C2;
@@ -1649,7 +1712,7 @@ section.UploadStoryBody .UploadStoryForm .UploadStoryVideo .videoTime .circle, .
     left: 5%;
 }
 
-section.UploadStoryBody .UploadStoryForm .UploadStoryVideo .videoTime .pinkline, .HomePageaAfterLogingIn .SideNav .tab-content .videoTime .pinkline {
+section.UploadStoryBody .UploadStoryForm .UploadStoryVideo .videoTime .pinkline, .videoTime .pinkline {
     width: 90%;
     height: 1px;
     border: 0.5px solid #f990c344;
@@ -1668,7 +1731,6 @@ section.UploadStoryBody .UploadStoryForm .Description {
 }
 
 section.UploadStoryBody .UploadStoryForm .UploadSelectLabel {
-    width: 100%;
     text-align: left;
     color: #939597;
     font-size: 25px;
@@ -1739,7 +1801,7 @@ section.WhishList .card-group .card p, section.Suggestions .card-group .card p {
 /***************************
 ***************My Programs, programs, courses and lessons****
 ****************************/
-body.HomePageaAfterLogingIn nav ol.breadcrumb li.breadcrumb-item a, body.HomePageaAfterLogingIn nav ol.breadcrumb li.breadcrumb-item.active, body.HomePageaAfterLogingIn nav ol.breadcrumb li.breadcrumb-item::before {
+nav ol.breadcrumb li.breadcrumb-item a, nav ol.breadcrumb li.breadcrumb-item.active, nav ol.breadcrumb li.breadcrumb-item::before {
     color: #F990C2;
     font-weight: bold;
 }
@@ -1756,18 +1818,18 @@ body.HomePageaAfterLogingIn nav ol.breadcrumb li.breadcrumb-item a, body.HomePag
     width: 20px;
 }
 
-body.HomePageaAfterLogingIn .SideNav .ProgressBarLabel {
+.SideNav .ProgressBarLabel {
     font-size: 25px;
     font-weight: bolder;
     color: #939597;
     display: none;
 }
 
-body.HomePageaAfterLogingIn .SideNav .progress {
+.SideNav .progress {
     display: none;
 }
 
-body.HomePageaAfterLogingIn .SideNav .progress .bg-success {
+.SideNav .progress .bg-success {
     background-color: #EB8BB9 !important;
 }
 
@@ -1864,6 +1926,51 @@ body.HomePageaAfterLogingIn .SideNav .progress .bg-success {
 
 }
 
+audio {
+    width: 100%!important;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: rgb(255, 255, 255) !important;
+    width: 100%;
+   
+}
+
+audio::-webkit-media-controls-mute-button {
+   display: block;
+   width: 70px;
+   background-image: url(../images/sound.png);
+   background-size: contain;
+   margin-left: 5px;
+}
+
+audio::-webkit-media-controls-play-button {
+    display: block;
+    width: 70px !important;
+    background-size: cover;
+    background-image: url(../images/playicon.png);
+}
+
+audio::-webkit-media-controls-timeline-container {
+    display: block;
+}
+
+audio::-webkit-media-controls-current-time-display {
+    display: none;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+    display: none;
+}
+
+audio::-webkit-media-controls-timeline {
+    display: block;
+    width: 900px!important;
+    opacity: 1;
+    direction: ltr !important;;
+   
+}
+
 /***************************
 ***************Calendar****
 ****************************/
@@ -1953,11 +2060,13 @@ html .fc,
 
 .fc-header-center {
     text-align: center;
+    display: none !important;
 }
 
 .fc-header-right {
     width: 25%;
     text-align: right;
+    float: right !important;
 }
 
 .fc-header-title {
@@ -2646,7 +2755,6 @@ table.fc-border-separate {
         padding: 15px 0px 15px 110px;
     }
 }
-
 @media (max-width: 991px) {
     section.program .card p.card-text {
         margin-bottom: 10px;
@@ -2677,6 +2785,10 @@ table.fc-border-separate {
         padding: 10px 20px 20px 20px;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
+    }
+
+    div#SideNav {
+        display: contents;
     }
 
     nav ul.navbar-nav li {
@@ -2713,7 +2825,7 @@ table.fc-border-separate {
         padding: 6px !important;
     }
 
-    section.StayInTouch .UploadImage, section.StayInTouch .StayInTouchForm, body.HomePageaAfterLogingIn section.ProgramDate .UploadImage, body.HomePageaAfterLogingIn section.ProgramDate .ProgramDateDiv {
+    section.StayInTouch .UploadImage, section.StayInTouch .StayInTouchForm, section.ProgramDate .UploadImage, section.ProgramDate .ProgramDateDiv {
         height: 400px;
         border-radius: 70px;
         width: 75%;
@@ -2728,6 +2840,15 @@ table.fc-border-separate {
     nav#navbar form.navForm svg {
         left: 2%;
     }
+
+    section.AboutBody .UploadImage {
+        background-color: #F7F7F7;
+        border-radius: 70px;
+        height: 350px;
+        width: 50%;
+        margin: auto;
+    }
+   
 }
 
 @media (max-width:767px) {
@@ -2735,7 +2856,7 @@ table.fc-border-separate {
         display: flex;
         justify-content: center;
     }
-
+   
     section.program .card, section.specialOffer .card-group .card {
         width: 60%;
     }
@@ -2749,7 +2870,7 @@ table.fc-border-separate {
         width: 25%;
     }
 
-    #LogOutModal .modal-content .modal-body button, section.Profile .ProfileForm button, .HomePageaAfterLogingIn .SideNav .tab-content button.GetStarted, .HomePageaAfterLogingIn .SideNav .tab-content form button {
+    #LogOutModal .modal-content .modal-body button, section.Profile .ProfileForm button, button.GetStarted, form button {
         padding: 10px 30px;
         font-size: 12px;
     }
@@ -2759,13 +2880,13 @@ table.fc-border-separate {
         height: 70px;
     }
 
-    body.CartFull .OrderSummary {
+    .OrderSummary {
         margin-top: 30px;
     }
 
 
 
-    .CourseDetails section.Subscibe button.SubscribBTn {
+    section.Subscibe button.SubscribBTn {
         width: 80%;
     }
 
@@ -2780,7 +2901,7 @@ table.fc-border-separate {
         width: 90%;
     }
 
-    .CourseDetails section.ProgramAgenda .PrgoramAgendaCards .card .card-text {
+    section.ProgramAgenda .PrgoramAgendaCards .card .card-text {
         font-size: 12px;
     }
 
@@ -2799,10 +2920,27 @@ table.fc-border-separate {
     nav#navbar form.navForm svg {
         left: 4%;
     }
+
+    section.AboutBody .UploadImage {
+        width: 75%;
+    }
+     .iframeContainer {
+            height: 400px;
+        }
+        
 }
 
 @media (max-width: 575px) {
     section.program .card, section.specialOffer .card-group .card {
+        width: 100%;
+    }
+    .iframeContainer {
+        height: 300px;
+    }
+    
+       
+            
+    section.AboutBody .UploadImage {
         width: 100%;
     }
 
@@ -2832,7 +2970,7 @@ table.fc-border-separate {
         font-size: 25px;
     }
 
-    section.StayInTouch .UploadImage, section.StayInTouch .StayInTouchForm, body.HomePageaAfterLogingIn section.ProgramDate .UploadImage, body.HomePageaAfterLogingIn section.ProgramDate .ProgramDateDiv {
+    section.StayInTouch .UploadImage, section.StayInTouch .StayInTouchForm, section.ProgramDate .UploadImage, section.ProgramDate .ProgramDateDiv {
         width: 100%;
     }
 
@@ -2867,7 +3005,11 @@ table.fc-border-separate {
     }
 
     .fc-header td {
-        width: 33% !important;
+        width: 50% !important;
+    }
+
+    .fc-header-title h2 {
+        font-size: 20px;
     }
 
     .fc th {
@@ -2887,13 +3029,13 @@ table.fc-border-separate {
         width: 30%;
     }
 
-    .CourseDetails section.CoursesDivs .RefundDays .card .card-body p.card-text {
+    section.CoursesDivs .RefundDays .card .card-body p.card-text {
         font-size: 20px;
         padding: 20px 20px 20px 20px;
         line-height: 36px;
     }
 
-    .CourseDetails section.Subscibe button.SubscribBTn {
+    section.Subscibe button.SubscribBTn {
         font-size: 17px;
     }
 
